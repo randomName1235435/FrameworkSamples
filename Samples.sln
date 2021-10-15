@@ -61,6 +61,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XcoAppSpace.Server", "XcoAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XcoAppSpace.Client", "XcoAppSpace.Client\XcoAppSpace.Client.csproj", "{A4B34FC9-B8CF-4525-A867-875FD4088B96}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Http.Server", "Http.Server", "{BF3EE28E-CC86-425B-A14F-0B034BFDBD8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalApiProject", "MinimalApiProject\MinimalApiProject.csproj", "{BE82EF2D-2B44-43C8-BF34-A1DFC3853B8E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -151,6 +155,10 @@ Global
 		{A4B34FC9-B8CF-4525-A867-875FD4088B96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4B34FC9-B8CF-4525-A867-875FD4088B96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4B34FC9-B8CF-4525-A867-875FD4088B96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE82EF2D-2B44-43C8-BF34-A1DFC3853B8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE82EF2D-2B44-43C8-BF34-A1DFC3853B8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE82EF2D-2B44-43C8-BF34-A1DFC3853B8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE82EF2D-2B44-43C8-BF34-A1DFC3853B8E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -174,6 +182,7 @@ Global
 		{4FD10822-B7B7-4D76-8E51-AAB0698DA8FD} = {D041A33A-4DE0-45E9-8473-9BB3A3422DB7}
 		{7923EB8D-CD1E-4F2E-88BC-D6F508157DC4} = {ABAA1917-A10B-4BDA-AA75-2B8F98D654A8}
 		{A4B34FC9-B8CF-4525-A867-875FD4088B96} = {ABAA1917-A10B-4BDA-AA75-2B8F98D654A8}
+		{BE82EF2D-2B44-43C8-BF34-A1DFC3853B8E} = {BF3EE28E-CC86-425B-A14F-0B034BFDBD8C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B1C8637B-A32F-467E-A42D-7E145AE39FAC}
