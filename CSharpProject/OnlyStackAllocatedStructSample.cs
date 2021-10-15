@@ -1,7 +1,7 @@
 ﻿
 namespace CSharpProject
 {
-    public ref struct OnlyHeapAllocatedStructSample
+    public ref struct OnlyStackAllocatedStructSample
     {
         public int SampleProperty { get; set; }
     }
@@ -9,7 +9,7 @@ namespace CSharpProject
     {
         public void Samplemethod()
         {
-            var heapAllocatedStruct = new OnlyHeapAllocatedStructSample
+            var stackAllocatedStruct = new OnlyStackAllocatedStructSample
             {
                 SampleProperty = 0
             };
