@@ -9,4 +9,10 @@
         }
     }
     internal record SampleRecord(string SampleStringProperty, int SampleIntProperty);
+    internal abstract record SampleAbstractRecord(string SampleStringProperty, int SampleIntProperty)
+    {
+        protected virtual void SampleVirtualMethod() { }
+        protected abstract void SampleAbstractMethod();
+    };
 }
+
