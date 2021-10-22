@@ -6,6 +6,10 @@
         {
             var sample = new SampleRecord("Sample", 1);
             var sampleWith = sample with { SampleIntProperty = 2 };
+
+            var sampleInitRecord = new SampleInitRecord() { SampleProperty = 5 };
+
+
         }
     }
     internal record SampleRecord(string SampleStringProperty, int SampleIntProperty);
@@ -13,6 +17,10 @@
     {
         protected virtual void SampleVirtualMethod() { }
         protected abstract void SampleAbstractMethod();
+    };
+    internal record SampleInitRecord()
+    {
+        public int SampleProperty { get; init; }
     };
 }
 
