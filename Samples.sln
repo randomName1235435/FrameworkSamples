@@ -49,11 +49,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RefitProject", "RefitProjec
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reflection", "Reflection", "{02695802-D543-4851-A4D5-0252B86C9189}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SigilProject", "SigilProject\SigilProject.csproj", "{BB37B9E7-499C-4509-906D-CE1B6841B7EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SigilProject", "SigilProject\SigilProject.csproj", "{BB37B9E7-499C-4509-906D-CE1B6841B7EA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Grpc.Server", "Grpc.Server", "{D041A33A-4DE0-45E9-8473-9BB3A3422DB7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcServerProject", "GrpcServerProject\GrpcServerProject.csproj", "{4FD10822-B7B7-4D76-8E51-AAB0698DA8FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrpcServerProject", "GrpcServerProject\GrpcServerProject.csproj", "{4FD10822-B7B7-4D76-8E51-AAB0698DA8FD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "XcoAppSpace", "XcoAppSpace", "{ABAA1917-A10B-4BDA-AA75-2B8F98D654A8}"
 EndProject
@@ -63,7 +63,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XcoAppSpace.Client", "XcoAp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Http.Server", "Http.Server", "{BF3EE28E-CC86-425B-A14F-0B034BFDBD8C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalApiProject", "MinimalApiProject\MinimalApiProject.csproj", "{BE82EF2D-2B44-43C8-BF34-A1DFC3853B8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MinimalApiProject", "MinimalApiProject\MinimalApiProject.csproj", "{BE82EF2D-2B44-43C8-BF34-A1DFC3853B8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiVersioning", "WebApiVersioning\WebApiVersioning.csproj", "{6A42A0EB-4E2F-48E4-9EDD-1DE4995CB711}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -159,6 +161,10 @@ Global
 		{BE82EF2D-2B44-43C8-BF34-A1DFC3853B8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE82EF2D-2B44-43C8-BF34-A1DFC3853B8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE82EF2D-2B44-43C8-BF34-A1DFC3853B8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A42A0EB-4E2F-48E4-9EDD-1DE4995CB711}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A42A0EB-4E2F-48E4-9EDD-1DE4995CB711}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A42A0EB-4E2F-48E4-9EDD-1DE4995CB711}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A42A0EB-4E2F-48E4-9EDD-1DE4995CB711}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -183,6 +189,7 @@ Global
 		{7923EB8D-CD1E-4F2E-88BC-D6F508157DC4} = {ABAA1917-A10B-4BDA-AA75-2B8F98D654A8}
 		{A4B34FC9-B8CF-4525-A867-875FD4088B96} = {ABAA1917-A10B-4BDA-AA75-2B8F98D654A8}
 		{BE82EF2D-2B44-43C8-BF34-A1DFC3853B8E} = {BF3EE28E-CC86-425B-A14F-0B034BFDBD8C}
+		{6A42A0EB-4E2F-48E4-9EDD-1DE4995CB711} = {478605C9-D3CB-45CC-A85F-B9A85583DEFB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B1C8637B-A32F-467E-A42D-7E145AE39FAC}
