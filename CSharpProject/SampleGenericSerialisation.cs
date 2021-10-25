@@ -6,6 +6,7 @@ using System.Text;
 
 namespace CSharpProject
 {
+    [Obsolete("dont use me pls; use xml or json or protocol buffers")]
     public sealed class SampleGenericListSerialisation<T>
     {
         public SampleGenericListSerialisation(string path)
