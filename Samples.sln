@@ -71,6 +71,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ObjectRelationMapping", "Ob
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Benchmarking", "Benchmarking", "{4586BD46-9966-4403-8DD4-33D9E6E25AEC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Serialisation", "Serialisation", "{A95AA7B3-B908-4A4B-A7CE-BB3B24AD48CD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Protobuf", "Protobuf\Protobuf.csproj", "{D6E3C866-C066-4F06-A095-1024A0268435}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -169,6 +173,10 @@ Global
 		{6A42A0EB-4E2F-48E4-9EDD-1DE4995CB711}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A42A0EB-4E2F-48E4-9EDD-1DE4995CB711}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A42A0EB-4E2F-48E4-9EDD-1DE4995CB711}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6E3C866-C066-4F06-A095-1024A0268435}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6E3C866-C066-4F06-A095-1024A0268435}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6E3C866-C066-4F06-A095-1024A0268435}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6E3C866-C066-4F06-A095-1024A0268435}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -196,6 +204,7 @@ Global
 		{A4B34FC9-B8CF-4525-A867-875FD4088B96} = {ABAA1917-A10B-4BDA-AA75-2B8F98D654A8}
 		{BE82EF2D-2B44-43C8-BF34-A1DFC3853B8E} = {BF3EE28E-CC86-425B-A14F-0B034BFDBD8C}
 		{6A42A0EB-4E2F-48E4-9EDD-1DE4995CB711} = {478605C9-D3CB-45CC-A85F-B9A85583DEFB}
+		{D6E3C866-C066-4F06-A095-1024A0268435} = {A95AA7B3-B908-4A4B-A7CE-BB3B24AD48CD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B1C8637B-A32F-467E-A42D-7E145AE39FAC}
