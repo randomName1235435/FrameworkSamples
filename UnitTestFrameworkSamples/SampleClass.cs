@@ -9,5 +9,9 @@
         {
             return 0;
         }
+
+        public int SampleIntProperty { get; set; }
+        public System.DateTime SampleDateTimeProperty { get; set; }
+        public string SampleStringProperty { get; set; }
     }
 }
