@@ -61,11 +61,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XcoAppSpace.Server", "XcoAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XcoAppSpace.Client", "XcoAppSpace.Client\XcoAppSpace.Client.csproj", "{A4B34FC9-B8CF-4525-A867-875FD4088B96}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Http.Server", "Http.Server", "{BF3EE28E-CC86-425B-A14F-0B034BFDBD8C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RestApi.Server", "RestApi.Server", "{BF3EE28E-CC86-425B-A14F-0B034BFDBD8C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MinimalApiProject", "MinimalApiProject\MinimalApiProject.csproj", "{BE82EF2D-2B44-43C8-BF34-A1DFC3853B8E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiVersioning", "WebApiVersioning\WebApiVersioning.csproj", "{6A42A0EB-4E2F-48E4-9EDD-1DE4995CB711}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiVersioning", "WebApiVersioning\WebApiVersioning.csproj", "{6A42A0EB-4E2F-48E4-9EDD-1DE4995CB711}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ObjectRelationMapping", "ObjectRelationMapping", "{7D016462-6C37-419A-8E2E-3BA4FD507D35}"
 EndProject
@@ -78,6 +78,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataGeneration", "DataGeneration", "{6BFB8565-A28D-4BB0-9B65-99E038BF8522}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mocking", "Mocking", "{E35034D9-864E-41AE-9AE3-DD5ED22DF6BD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarterMinimalApiSample", "CarterMinimalApiSample\CarterMinimalApiSample.csproj", "{ECA130BF-2F45-4481-AF23-6E3DE79BFC91}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -181,6 +183,10 @@ Global
 		{D6E3C866-C066-4F06-A095-1024A0268435}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6E3C866-C066-4F06-A095-1024A0268435}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6E3C866-C066-4F06-A095-1024A0268435}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECA130BF-2F45-4481-AF23-6E3DE79BFC91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECA130BF-2F45-4481-AF23-6E3DE79BFC91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECA130BF-2F45-4481-AF23-6E3DE79BFC91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECA130BF-2F45-4481-AF23-6E3DE79BFC91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -211,6 +217,7 @@ Global
 		{D6E3C866-C066-4F06-A095-1024A0268435} = {A95AA7B3-B908-4A4B-A7CE-BB3B24AD48CD}
 		{6BFB8565-A28D-4BB0-9B65-99E038BF8522} = {CD39BC36-9C72-47FD-BEEC-272EAF2FD3FF}
 		{E35034D9-864E-41AE-9AE3-DD5ED22DF6BD} = {CD39BC36-9C72-47FD-BEEC-272EAF2FD3FF}
+		{ECA130BF-2F45-4481-AF23-6E3DE79BFC91} = {BF3EE28E-CC86-425B-A14F-0B034BFDBD8C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B1C8637B-A32F-467E-A42D-7E145AE39FAC}
