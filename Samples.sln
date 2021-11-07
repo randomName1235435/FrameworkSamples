@@ -87,6 +87,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IocContainer", "IocContaine
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleIocContainerSample", "SimpleIocContainerSample\SimpleIocContainerSample.csproj", "{62346D2C-C211-44C1-BB35-72A55A37C715}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleBenchmark", "SimpleBenchmark\SimpleBenchmark.csproj", "{E1A5E665-F460-4B2A-AF42-6F58A5F33FFB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -201,6 +203,10 @@ Global
 		{62346D2C-C211-44C1-BB35-72A55A37C715}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62346D2C-C211-44C1-BB35-72A55A37C715}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62346D2C-C211-44C1-BB35-72A55A37C715}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1A5E665-F460-4B2A-AF42-6F58A5F33FFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1A5E665-F460-4B2A-AF42-6F58A5F33FFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1A5E665-F460-4B2A-AF42-6F58A5F33FFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1A5E665-F460-4B2A-AF42-6F58A5F33FFB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -234,6 +240,7 @@ Global
 		{ECA130BF-2F45-4481-AF23-6E3DE79BFC91} = {BF3EE28E-CC86-425B-A14F-0B034BFDBD8C}
 		{20BE6F2D-A469-4D0D-B5DF-FA6DAE583B94} = {BF3EE28E-CC86-425B-A14F-0B034BFDBD8C}
 		{62346D2C-C211-44C1-BB35-72A55A37C715} = {137CB97E-EB9F-4B49-BD45-423923303A05}
+		{E1A5E665-F460-4B2A-AF42-6F58A5F33FFB} = {4586BD46-9966-4403-8DD4-33D9E6E25AEC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B1C8637B-A32F-467E-A42D-7E145AE39FAC}
