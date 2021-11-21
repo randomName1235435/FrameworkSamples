@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
@@ -12,4 +12,10 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="UnitTestFrameworkSamples">
+      <HintPath>..\UnitTestFrameworkSamples\bin\Debug\netcoreapp3.1\UnitTestFrameworkSamples.dll</HintPath>
+      <Aliases>SampleDll</Aliases>
+    </Reference>
+  </ItemGroup>
 </Project>
