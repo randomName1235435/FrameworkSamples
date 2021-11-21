@@ -15,7 +15,8 @@ namespace CSharpProject
             unsafe
             {
                 int* samplePointer = &sampleInteger;
-                *samplePointer++;
+                Console.WriteLine($"value: {*samplePointer}");
+                Console.WriteLine($"value: {samplePointer->ToString()}");
             }
         }
     }
