@@ -99,6 +99,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HarmonyProject", "HarmonyPr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrongInjectSample", "StrongInjectSample\StrongInjectSample.csproj", "{E420C5A4-8D6C-4AEE-AB8A-F1ACCC85B113}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JabSample", "JabSample\JabSample.csproj", "{59E1D432-E713-414C-BE20-6A61A16E507C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -237,6 +239,10 @@ Global
 		{E420C5A4-8D6C-4AEE-AB8A-F1ACCC85B113}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E420C5A4-8D6C-4AEE-AB8A-F1ACCC85B113}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E420C5A4-8D6C-4AEE-AB8A-F1ACCC85B113}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59E1D432-E713-414C-BE20-6A61A16E507C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59E1D432-E713-414C-BE20-6A61A16E507C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59E1D432-E713-414C-BE20-6A61A16E507C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59E1D432-E713-414C-BE20-6A61A16E507C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -276,6 +282,7 @@ Global
 		{E05106B0-F56E-407A-8C69-A42B7C9C50B2} = {A95AA7B3-B908-4A4B-A7CE-BB3B24AD48CD}
 		{063BC74A-37E8-41EB-A008-3E3FE3EA44BF} = {02695802-D543-4851-A4D5-0252B86C9189}
 		{E420C5A4-8D6C-4AEE-AB8A-F1ACCC85B113} = {137CB97E-EB9F-4B49-BD45-423923303A05}
+		{59E1D432-E713-414C-BE20-6A61A16E507C} = {137CB97E-EB9F-4B49-BD45-423923303A05}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B1C8637B-A32F-467E-A42D-7E145AE39FAC}
