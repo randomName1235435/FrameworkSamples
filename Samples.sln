@@ -81,19 +81,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mocking", "Mocking", "{E350
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarterMinimalApiSample", "CarterMinimalApiSample\CarterMinimalApiSample.csproj", "{ECA130BF-2F45-4481-AF23-6E3DE79BFC91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCheckSample", "HealthCheckSample\HealthCheckSample.csproj", "{20BE6F2D-A469-4D0D-B5DF-FA6DAE583B94}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthCheckSample", "HealthCheckSample\HealthCheckSample.csproj", "{20BE6F2D-A469-4D0D-B5DF-FA6DAE583B94}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IocContainer", "IocContainer", "{137CB97E-EB9F-4B49-BD45-423923303A05}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleIocContainerSample", "SimpleIocContainerSample\SimpleIocContainerSample.csproj", "{62346D2C-C211-44C1-BB35-72A55A37C715}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleIocContainerSample", "SimpleIocContainerSample\SimpleIocContainerSample.csproj", "{62346D2C-C211-44C1-BB35-72A55A37C715}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleBenchmark", "SimpleBenchmark\SimpleBenchmark.csproj", "{E1A5E665-F460-4B2A-AF42-6F58A5F33FFB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleBenchmark", "SimpleBenchmark\SimpleBenchmark.csproj", "{E1A5E665-F460-4B2A-AF42-6F58A5F33FFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwaggerSample", "SwaggerSample\SwaggerSample.csproj", "{0AD57C21-D3EA-49D4-805B-960B30D61CDD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SwaggerSample", "SwaggerSample\SwaggerSample.csproj", "{0AD57C21-D3EA-49D4-805B-960B30D61CDD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonUtf8", "JsonUtf8\JsonUtf8.csproj", "{13D0B2DC-D569-42FE-A6AA-7AF2BE6B8F8C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JsonUtf8", "JsonUtf8\JsonUtf8.csproj", "{13D0B2DC-D569-42FE-A6AA-7AF2BE6B8F8C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SystemText", "SystemText\SystemText.csproj", "{E05106B0-F56E-407A-8C69-A42B7C9C50B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SystemText", "SystemText\SystemText.csproj", "{E05106B0-F56E-407A-8C69-A42B7C9C50B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HarmonyProject", "HarmonyProject\HarmonyProject.csproj", "{063BC74A-37E8-41EB-A008-3E3FE3EA44BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -225,6 +227,10 @@ Global
 		{E05106B0-F56E-407A-8C69-A42B7C9C50B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E05106B0-F56E-407A-8C69-A42B7C9C50B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E05106B0-F56E-407A-8C69-A42B7C9C50B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{063BC74A-37E8-41EB-A008-3E3FE3EA44BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{063BC74A-37E8-41EB-A008-3E3FE3EA44BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{063BC74A-37E8-41EB-A008-3E3FE3EA44BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{063BC74A-37E8-41EB-A008-3E3FE3EA44BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -262,6 +268,7 @@ Global
 		{0AD57C21-D3EA-49D4-805B-960B30D61CDD} = {BF3EE28E-CC86-425B-A14F-0B034BFDBD8C}
 		{13D0B2DC-D569-42FE-A6AA-7AF2BE6B8F8C} = {A95AA7B3-B908-4A4B-A7CE-BB3B24AD48CD}
 		{E05106B0-F56E-407A-8C69-A42B7C9C50B2} = {A95AA7B3-B908-4A4B-A7CE-BB3B24AD48CD}
+		{063BC74A-37E8-41EB-A008-3E3FE3EA44BF} = {02695802-D543-4851-A4D5-0252B86C9189}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B1C8637B-A32F-467E-A42D-7E145AE39FAC}
