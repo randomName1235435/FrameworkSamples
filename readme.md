@@ -1,5 +1,5 @@
 # Frameworksamples
-
+Repository to collect valueable or interesting framework and code samples.
 ## Benchmarks
 
 ### BenchmarkDotNet
