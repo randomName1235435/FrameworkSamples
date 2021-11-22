@@ -3,9 +3,9 @@
     using System.Data.Common;
     using System.Data.Entity;
 
-    public partial class SipFachEntities : DbContext
+    public partial class SampleContext : DbContext
     {
-        public SipFachEntities(string connectionString)
+        public SampleContext(string connectionString)
             : base(connectionString)
         {
             Configuration.LazyLoadingEnabled = false;
