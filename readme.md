@@ -6,7 +6,7 @@ Repository to collect valueable or interesting framework- and code- samples.
 Extensive benchmark, can save results etc.
 
 ### SimpleBenchmark
-Simple benchmark for in field user.
+Simple benchmark for in field usage.
 
 ## GRPC
 Remote procedure calls per HTTP.
