@@ -8,6 +8,9 @@ namespace JabSample
     [Scoped(typeof(SampleApplication))]
     partial class SampleServiceProvider 
     {
-        
+        public SampleServiceProvider()
+        {
+
+        }
     }
 }
