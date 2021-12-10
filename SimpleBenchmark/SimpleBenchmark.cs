@@ -31,8 +31,8 @@ namespace SimpleBenchmark
                     toBenchmark();
                 }
                 w.Stop();
-                i++;
                 result.RunTime[i] = w.ElapsedMilliseconds;
+                i++;
             }
             var allocatedMemory = GC.GetTotalAllocatedBytes() - memoryBefore;
 
