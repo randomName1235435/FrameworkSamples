@@ -39,8 +39,8 @@ namespace SimpleBenchmark
             double sum = 0;
             for (int j = 0; j < result.RunTime.Length; j++)
             {
-                Console.WriteLine($"Run {i}: {result.RunTime[i]} ms");
-                sum += result.RunTime[i];
+                Console.WriteLine($"Run {j}: {result.RunTime[j]} ms");
+                sum += result.RunTime[j];
             }
             var mean = sum / 30;
 
