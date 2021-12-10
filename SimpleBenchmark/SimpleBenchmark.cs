@@ -44,8 +44,8 @@ namespace SimpleBenchmark
             }
             var mean = sum / 30;
 
-            Console.WriteLine($"mean: {string.Format("{0:N4}", mean)}` ms");
-            Console.WriteLine($"allocated memory: {allocatedMemory}` b\r\n");
+            Console.WriteLine($"mean: {string.Format("{0:N4}", mean)} ms");
+            Console.WriteLine($"allocated memory: {allocatedMemory} b\r\n");
 
             return result;
         }
