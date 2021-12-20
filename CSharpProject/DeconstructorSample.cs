@@ -31,4 +31,18 @@ namespace CSharpProject
             sampleProp2 = SampleInt2;
         }
     }
+    public class DeconstructExtensionSample 
+    {
+        public DeconstructExtensionSample(int sampleInt)
+        {
+            SampleInt = sampleInt;
+        }
+
+        public int SampleInt { get; }
+    }
+    public static class DeconstructExtenstion {
+        public static void Deconstruct(this DeconstructExtensionSample deconstructExtensionSample,  out int sampleInt) {
+            sampleInt = deconstructExtensionSample.SampleInt;
+        }
+    }
 }
