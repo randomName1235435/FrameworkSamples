@@ -13,32 +13,43 @@ namespace CSharpProject
         {
             var source = new CancellationTokenSource(1000);
             var token = source.Token;
-            var result = await SampleMethod(token);
+            var result = SampleMethodProperty(token);
             source.Cancel();
             source.CancelAfter(1000);
+            source.Token.ThrowIfCancellationRequested();
             source.Dispose();
         }
 
-        private Task<int> SampleMethod(CancellationToken token)
+        private int SampleMethodProperty(CancellationToken token)
         {
-            return Task.Run(new Func<CancellationToken, int>(token =>
-                           {
-                               int count = 0;
-                               while (!token.IsCancellationRequested)
-                               {
-                                   try
-                                   {
-                                       Thread.Sleep(1000);
-                                       count++;
-                                   }
-                                   catch (TaskCanceledException e)
-                                   {
-                                       return count;
-                                   }
-                               }
-                               return 0;
-                           }),);
-
+            int count = 0;
+            while (!token.IsCancellationRequested)
+            {
+                Thread.Sleep(1000);
+                count++;
+            }
+            return count;
         }
+    private Task<int> SampleMethodException(CancellationToken token)
+    {
+
+        Func<int> y = new Func<int>(() =>
+      {
+          int count = 0;
+          while (true)
+          {
+              try
+              {
+                  Thread.Sleep(1000);
+                  count++;
+              }
+              catch (TaskCanceledException e)
+              {
+                  return count;
+              }
+          }
+      });
+        return Task<int>.Factory.StartNew(y, cancellationToken: token);
     }
+}
 }
