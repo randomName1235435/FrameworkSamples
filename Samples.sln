@@ -95,11 +95,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JsonUtf8", "JsonUtf8\JsonUt
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SystemText", "SystemText\SystemText.csproj", "{E05106B0-F56E-407A-8C69-A42B7C9C50B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HarmonyProject", "HarmonyProject\HarmonyProject.csproj", "{063BC74A-37E8-41EB-A008-3E3FE3EA44BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HarmonyProject", "HarmonyProject\HarmonyProject.csproj", "{063BC74A-37E8-41EB-A008-3E3FE3EA44BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrongInjectSample", "StrongInjectSample\StrongInjectSample.csproj", "{E420C5A4-8D6C-4AEE-AB8A-F1ACCC85B113}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StrongInjectSample", "StrongInjectSample\StrongInjectSample.csproj", "{E420C5A4-8D6C-4AEE-AB8A-F1ACCC85B113}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JabSample", "JabSample\JabSample.csproj", "{59E1D432-E713-414C-BE20-6A61A16E507C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JabSample", "JabSample\JabSample.csproj", "{59E1D432-E713-414C-BE20-6A61A16E507C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExceptionHandling", "ExceptionHandling", "{C2302A98-8056-4B57-9651-59FD95AACE20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ben.DemystifierSample", "Ben.DemystifierSample\Ben.DemystifierSample.csproj", "{81B073ED-69E3-46D7-A4C1-ECD94FEA61A8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -243,6 +247,10 @@ Global
 		{59E1D432-E713-414C-BE20-6A61A16E507C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59E1D432-E713-414C-BE20-6A61A16E507C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59E1D432-E713-414C-BE20-6A61A16E507C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81B073ED-69E3-46D7-A4C1-ECD94FEA61A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81B073ED-69E3-46D7-A4C1-ECD94FEA61A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81B073ED-69E3-46D7-A4C1-ECD94FEA61A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81B073ED-69E3-46D7-A4C1-ECD94FEA61A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -283,6 +291,7 @@ Global
 		{063BC74A-37E8-41EB-A008-3E3FE3EA44BF} = {02695802-D543-4851-A4D5-0252B86C9189}
 		{E420C5A4-8D6C-4AEE-AB8A-F1ACCC85B113} = {137CB97E-EB9F-4B49-BD45-423923303A05}
 		{59E1D432-E713-414C-BE20-6A61A16E507C} = {137CB97E-EB9F-4B49-BD45-423923303A05}
+		{81B073ED-69E3-46D7-A4C1-ECD94FEA61A8} = {C2302A98-8056-4B57-9651-59FD95AACE20}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B1C8637B-A32F-467E-A42D-7E145AE39FAC}
