@@ -4,7 +4,7 @@ using CliFx.Infrastructure;
 
 namespace CliFxSample
 {
-    [Command]
+    [Command("sampleCommandName")]
     internal class NotAsyncSampleCommand : ICommand
     {
         [CommandOption('p', Description = "paramName", IsRequired = true)]
