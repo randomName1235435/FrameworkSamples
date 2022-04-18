@@ -58,13 +58,10 @@
         public static decimal CalculateCustomerPrice(decimal baseprice, int customerYears, bool customerBoughtLastYear) =>
             (baseprice > 5M, customerYears >= 5, customerBoughtLastYear) switch
             {
-                (true, true, true) => 0.2M,
-                (true, false, true) => 0.1M,
-                (true, true, false) => 0.05M,
-                _ => 0
+                (true, true, true) => baseprice*0.2M,
+                (true, false, true) => baseprice * 0.1M,
+                (true, true, false) => baseprice * 0.05M,
+                _ => baseprice
             };
-private static decimal AddDefaultMargin(decimal baseprice) => baseprice * defaultMargin;
-        
-    }
     record PatternMatchingSampleSampleRecord(int SampleIntProperty1, int SampleIntProperty2);
 }
