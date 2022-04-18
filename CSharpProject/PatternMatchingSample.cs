@@ -54,20 +54,19 @@
             _ => ""
         };
         //AddDefaultMargin(baseprice)
-        public enum CustomerType { 
+        public enum CustomerType
+        {
             Basic,
             Premium
         }
-        public static decimal CalculateCustomerPrice(decimal baseprice, int customerYears, bool customerBoughtLastYear, CustomerType customerType ) =>
+        public static decimal CalculateCustomerPrice(decimal baseprice, int customerYears, bool customerBoughtLastYear, CustomerType customerType) =>
             (baseprice > 5M, customerYears >= 5, customerBoughtLastYear, customerType) switch
             {
-                (true, true, true, CustomerType.Premium) => baseprice* 0.75M,
+                (_, _, _, CustomerType.Premium) => baseprice * 0.7M,
                 (true, true, true, CustomerType.Basic) => baseprice * 0.8M,
-                (true, false, true, CustomerType.Premium) => baseprice * 0.87M,
                 (true, false, true, CustomerType.Basic) => baseprice * 0.9M,
-                (true, true, false, CustomerType.Premium) => baseprice * 0.93M,
                 (true, true, false, CustomerType.Basic) => baseprice * 0.95M,
                 _ => baseprice
             };
-    record PatternMatchingSampleSampleRecord(int SampleIntProperty1, int SampleIntProperty2);
-}
+        record PatternMatchingSampleSampleRecord(int SampleIntProperty1, int SampleIntProperty2);
+    }
