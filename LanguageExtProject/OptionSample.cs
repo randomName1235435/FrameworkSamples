@@ -1,9 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
-using LanguageExt;
+﻿using LanguageExt;
 
 namespace LanguageExtProject
 {
-
     public class OptionSample
     {
         public void main()
