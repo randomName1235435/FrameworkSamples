@@ -70,3 +70,4 @@
             };
         record PatternMatchingSampleSampleRecord(int SampleIntProperty1, int SampleIntProperty2);
     }
+}
