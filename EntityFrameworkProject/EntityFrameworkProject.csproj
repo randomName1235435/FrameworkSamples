@@ -60,6 +60,9 @@
     <Compile Include="EF6\Context.Extensions.cs" />
     <Compile Include="EF6\ContextProviderBase.cs" />
     <Compile Include="EF6\IContextProvider.cs" />
+    <Compile Include="EF6\IUsable.cs" />
+    <Compile Include="EF6\ProviderExtensions.cs" />
+    <Compile Include="EF6\Usable.cs" />
     <Compile Include="EFCore\LinqSamples.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
