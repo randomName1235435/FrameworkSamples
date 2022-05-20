@@ -119,7 +119,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fluent", "Fluent", "{DD5312
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LanguageExtProject", "LanguageExtProject\LanguageExtProject.csproj", "{3DED19E6-420C-48BB-89FC-2CE8DE6BEA7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DapperSample", "DapperSample\DapperSample.csproj", "{3DF6F150-0B21-4652-AEC8-BB29C21CC1AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DapperSample", "DapperSample\DapperSample.csproj", "{3DF6F150-0B21-4652-AEC8-BB29C21CC1AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutofacSample", "AutofacSample\AutofacSample.csproj", "{A9926598-8905-42ED-8119-A252E4922827}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -287,6 +289,10 @@ Global
 		{3DF6F150-0B21-4652-AEC8-BB29C21CC1AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3DF6F150-0B21-4652-AEC8-BB29C21CC1AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3DF6F150-0B21-4652-AEC8-BB29C21CC1AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9926598-8905-42ED-8119-A252E4922827}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9926598-8905-42ED-8119-A252E4922827}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9926598-8905-42ED-8119-A252E4922827}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9926598-8905-42ED-8119-A252E4922827}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -333,6 +339,7 @@ Global
 		{539CC3FF-ECA9-4C9E-858E-9EB859460F88} = {677BAC54-06AF-4641-A78C-94CA8CFE4A60}
 		{3DED19E6-420C-48BB-89FC-2CE8DE6BEA7C} = {DD5312B5-6247-4B65-A0A7-5F85BFB9FFBD}
 		{3DF6F150-0B21-4652-AEC8-BB29C21CC1AE} = {7D016462-6C37-419A-8E2E-3BA4FD507D35}
+		{A9926598-8905-42ED-8119-A252E4922827} = {137CB97E-EB9F-4B49-BD45-423923303A05}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B1C8637B-A32F-467E-A42D-7E145AE39FAC}
