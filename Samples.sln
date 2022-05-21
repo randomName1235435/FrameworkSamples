@@ -121,7 +121,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LanguageExtProject", "Langu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DapperSample", "DapperSample\DapperSample.csproj", "{3DF6F150-0B21-4652-AEC8-BB29C21CC1AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutofacSample", "AutofacSample\AutofacSample.csproj", "{A9926598-8905-42ED-8119-A252E4922827}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutofacSample", "AutofacSample\AutofacSample.csproj", "{A9926598-8905-42ED-8119-A252E4922827}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetSample", "DotNetSample\DotNetSample.csproj", "{614E5751-A128-45C7-9235-C66A0BFAFE03}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -293,6 +295,10 @@ Global
 		{A9926598-8905-42ED-8119-A252E4922827}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9926598-8905-42ED-8119-A252E4922827}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9926598-8905-42ED-8119-A252E4922827}.Release|Any CPU.Build.0 = Release|Any CPU
+		{614E5751-A128-45C7-9235-C66A0BFAFE03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{614E5751-A128-45C7-9235-C66A0BFAFE03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{614E5751-A128-45C7-9235-C66A0BFAFE03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{614E5751-A128-45C7-9235-C66A0BFAFE03}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -340,6 +346,7 @@ Global
 		{3DED19E6-420C-48BB-89FC-2CE8DE6BEA7C} = {DD5312B5-6247-4B65-A0A7-5F85BFB9FFBD}
 		{3DF6F150-0B21-4652-AEC8-BB29C21CC1AE} = {7D016462-6C37-419A-8E2E-3BA4FD507D35}
 		{A9926598-8905-42ED-8119-A252E4922827} = {137CB97E-EB9F-4B49-BD45-423923303A05}
+		{614E5751-A128-45C7-9235-C66A0BFAFE03} = {137CB97E-EB9F-4B49-BD45-423923303A05}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B1C8637B-A32F-467E-A42D-7E145AE39FAC}
