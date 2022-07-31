@@ -6,9 +6,10 @@
         {
             string moveAbleSample = "123";
             //fixes a movable allocation, so that the GC dont realloc the variable
-            fixed (char* fixedSample = moveAbleSample) { 
-            
-            }   
+            fixed (char* fixedSample = moveAbleSample)
+            {
+
+            }
         }
     }
 }

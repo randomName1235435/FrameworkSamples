@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharpProject
+﻿namespace CSharpProject
 {
     internal class SampleCtorParamInitWithTempTuples
     {
@@ -14,6 +8,5 @@ namespace CSharpProject
 
         public SampleCtorParamInitWithTempTuples(int sampleProperty1, int sampleProperty2, int optionalProperty = default)
             => (this.SampleProperty1, this.SampleProperty2, this.OptionalProperty) = (sampleProperty1, sampleProperty2, optionalProperty);
-
     }
 }

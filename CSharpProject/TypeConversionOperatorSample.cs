@@ -2,7 +2,8 @@ using System;
 
 public class TypeConversionOperatorSample
 {
-    public void SampleMethod() {
+    public void SampleMethod()
+    {
 
         UserId userId = Guid.NewGuid();
         Guid guid = userId;
@@ -19,7 +20,8 @@ public class TypeConversionOperatorSample
             this.id = guid;
         }
 
-        public static implicit operator UserId(Guid from) {
+        public static implicit operator UserId(Guid from)
+        {
             return new UserId(from);
         }
         public static implicit operator Guid(UserId from)

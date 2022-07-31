@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -30,26 +27,26 @@ namespace CSharpProject
             }
             return count;
         }
-    private Task<int> SampleMethodException(CancellationToken token)
-    {
+        private Task<int> SampleMethodException(CancellationToken token)
+        {
 
-        Func<int> y = new Func<int>(() =>
-      {
-          int count = 0;
-          while (true)
+            Func<int> y = new Func<int>(() =>
           {
-              try
+              int count = 0;
+              while (true)
               {
-                  Thread.Sleep(1000);
-                  count++;
+                  try
+                  {
+                      Thread.Sleep(1000);
+                      count++;
+                  }
+                  catch (TaskCanceledException e)
+                  {
+                      return count;
+                  }
               }
-              catch (TaskCanceledException e)
-              {
-                  return count;
-              }
-          }
-      });
-        return Task<int>.Factory.StartNew(y, cancellationToken: token);
+          });
+            return Task<int>.Factory.StartNew(y, cancellationToken: token);
+        }
     }
-}
 }

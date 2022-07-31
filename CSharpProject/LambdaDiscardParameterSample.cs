@@ -1,6 +1,5 @@
 ﻿using System;
 
-
 namespace CSharpProject
 {
     class LambdaDiscardParameterSample

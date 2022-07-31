@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
-using System.Text;
+﻿using System.Runtime.CompilerServices;
 
 namespace CSharpProject
 {
-   public class ModulInitializerSample
+    public class ModulInitializerSample
     {
         [ModuleInitializer]
         public static void GetCalledEvenBeforeMain() { }

@@ -1,5 +1,4 @@
-﻿
-namespace CSharpProject
+﻿namespace CSharpProject
 {
     public ref struct OnlyStackAllocatedStructSample
     {
@@ -14,6 +13,5 @@ namespace CSharpProject
                 SampleProperty = 0
             };
         }
-
     }
 }

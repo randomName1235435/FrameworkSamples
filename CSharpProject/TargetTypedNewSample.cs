@@ -4,7 +4,8 @@
     {
         TargetTypedNewSample sample = new();
 
-        private TargetTypedNewSample  SampleMethodWithParameter(TargetTypedNewSample sample) {
+        private TargetTypedNewSample SampleMethodWithParameter(TargetTypedNewSample sample)
+        {
             return new();
         }
 

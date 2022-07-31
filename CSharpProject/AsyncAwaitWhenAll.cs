@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 
 namespace CSharpProject
 {
     class AsyncAwaitWhenAll
     {
-
         public async void Sample() {
 
             var result1Task = SampleMethod1();
