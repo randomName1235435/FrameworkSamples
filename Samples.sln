@@ -133,6 +133,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFrameworkCoreProject"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCoreSample", "DotNetCoreSample\DotNetCoreSample.csproj", "{9BFAB196-CC88-4EB3-9ED2-D30877EC7D27}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataContractBuiltInSample", "DataContractBuiltInSample\DataContractBuiltInSample.csproj", "{254145B8-BD93-4FD3-8920-DEFD7F8803C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -323,6 +325,10 @@ Global
 		{9BFAB196-CC88-4EB3-9ED2-D30877EC7D27}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BFAB196-CC88-4EB3-9ED2-D30877EC7D27}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9BFAB196-CC88-4EB3-9ED2-D30877EC7D27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{254145B8-BD93-4FD3-8920-DEFD7F8803C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{254145B8-BD93-4FD3-8920-DEFD7F8803C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{254145B8-BD93-4FD3-8920-DEFD7F8803C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{254145B8-BD93-4FD3-8920-DEFD7F8803C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -372,6 +378,7 @@ Global
 		{A9926598-8905-42ED-8119-A252E4922827} = {137CB97E-EB9F-4B49-BD45-423923303A05}
 		{614E5751-A128-45C7-9235-C66A0BFAFE03} = {137CB97E-EB9F-4B49-BD45-423923303A05}
 		{AB6695E0-DD78-4074-9FE5-DB8E368D093E} = {7D016462-6C37-419A-8E2E-3BA4FD507D35}
+		{254145B8-BD93-4FD3-8920-DEFD7F8803C3} = {A95AA7B3-B908-4A4B-A7CE-BB3B24AD48CD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B1C8637B-A32F-467E-A42D-7E145AE39FAC}

@@ -15,6 +15,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="System.Security.Permissions" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="UnitTestFrameworkSamples">
       <HintPath>..\UnitTestFrameworkSamples\bin\Debug\netcoreapp3.1\UnitTestFrameworkSamples.dll</HintPath>
       <Aliases>SampleDll</Aliases>
