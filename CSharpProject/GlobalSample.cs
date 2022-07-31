@@ -8,12 +8,13 @@ namespace CSharpProject
 {
     class GlobalSample
     {
-        void SampleMethod() {
+        void SampleMethod()
+        {
             global::System.Console.WriteLine();
         }
-    }
-    class Console
-    {
+        class Console
+        {
 
+        }
     }
 }

@@ -1,12 +1,13 @@
+using AspDotNetBuiltInSample;
 using Microsoft.AspNetCore.Mvc;
 
-namespace DotNetSample.Controllers
+namespace AspDotNetBuiltInSample.Controllers
 {
     [ApiController]
     [Route("[controller]")]
     public class SampleController : ControllerBase
     {
-       
+
 
         private readonly ILogger<SampleController> _logger;
         private readonly IEnumerable<ISampleService> services;
@@ -20,7 +21,7 @@ namespace DotNetSample.Controllers
             this.service = service;
         }
 
-        public SampleController(ILogger<SampleController> logger,IEnumerable< ISampleService> services)
+        public SampleController(ILogger<SampleController> logger, IEnumerable<ISampleService> services)
         {
             _logger = logger;
 

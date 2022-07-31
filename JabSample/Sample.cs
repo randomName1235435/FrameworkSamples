@@ -1,9 +1,5 @@
-﻿using Jab;
-using System;
-
-namespace JabSample
+﻿namespace JabSample
 {
-    
     partial class Sample
     {
         static void Main(string[] args)
@@ -11,8 +7,6 @@ namespace JabSample
             var serviceProvider = new SampleServiceProvider();
             var sampleService = serviceProvider.GetService<ISampleService>();
             var sampleApplication = serviceProvider.GetService<SampleApplication>();
-
         }
     }
-
 }

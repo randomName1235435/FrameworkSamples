@@ -4,9 +4,9 @@ using Jab;
 namespace JabSample
 {
     [ServiceProvider]
-    [Singleton(typeof(ISampleService))]
+    [Singleton(typeof(ISampleService), typeof(SampleService))]
     [Scoped(typeof(SampleApplication))]
-    partial class SampleServiceProvider 
+    public partial class SampleServiceProvider 
     {
         public SampleServiceProvider()
         {

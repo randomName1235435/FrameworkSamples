@@ -3,15 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
-namespace CSharpProject
+namespace WpfSample
 {
     internal class SampleMultipleStylesWpf
     {
-        public void ChangeStyle(string ressourceDictionaryName) {
+        public void ChangeStyle(string ressourceDictionaryName)
+        {
+            string path = "samplePath";
 
             //*notes: only works with complete independent ressource dictionaries, so use resmerger or something and dynamicResource in views/controls
-             
+
             var ressources = new ResourceDictionary();
             ressources.Source = new Uri(@"Resources/Dictionaries/" + path, UriKind.Relative);
 

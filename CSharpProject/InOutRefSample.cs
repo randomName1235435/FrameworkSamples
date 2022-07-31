@@ -27,7 +27,7 @@ namespace CSharpProject
             // by ref
             // can not (hidden [readonly] attribut on param) modify param
 
-            param = 1; // wont compile
+            //param = 1; -> wont compile
         }
 
         public void OutSample(out int param)

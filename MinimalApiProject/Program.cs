@@ -1,4 +1,6 @@
-﻿var app = WebApplication.CreateBuilder(args).Build();
+﻿using Microsoft.AspNetCore.Builder;
+
+var app = WebApplication.CreateBuilder(args).Build();
 app.MapGet("/", () => "SampleMessage");
 app.MapGet("SampleString", () => "Sample");
 app.MapGet("Sample", () => new Sample("sample", 0));
