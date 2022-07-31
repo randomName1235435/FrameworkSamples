@@ -129,7 +129,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetFrameworkSample", "Do
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfSample", "WpfSample\WpfSample.csproj", "{C43766AA-1199-4CE0-95D6-771143BC93A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkCoreProject", "EntityFrameworkCoreProject\EntityFrameworkCoreProject.csproj", "{AB6695E0-DD78-4074-9FE5-DB8E368D093E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFrameworkCoreProject", "EntityFrameworkCoreProject\EntityFrameworkCoreProject.csproj", "{AB6695E0-DD78-4074-9FE5-DB8E368D093E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCoreSample", "DotNetCoreSample\DotNetCoreSample.csproj", "{9BFAB196-CC88-4EB3-9ED2-D30877EC7D27}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -317,6 +319,10 @@ Global
 		{AB6695E0-DD78-4074-9FE5-DB8E368D093E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB6695E0-DD78-4074-9FE5-DB8E368D093E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB6695E0-DD78-4074-9FE5-DB8E368D093E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BFAB196-CC88-4EB3-9ED2-D30877EC7D27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BFAB196-CC88-4EB3-9ED2-D30877EC7D27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BFAB196-CC88-4EB3-9ED2-D30877EC7D27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BFAB196-CC88-4EB3-9ED2-D30877EC7D27}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
