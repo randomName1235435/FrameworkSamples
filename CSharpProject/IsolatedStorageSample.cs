@@ -21,7 +21,6 @@ namespace CSharpProject
         }
         public void ReadSample()
         {
-            // Read it back:
             using (IsolatedStorageFile f = IsolatedStorageFile.GetMachineStoreForDomain())
             using (var s = new IsolatedStorageFileStream("sample.txt", FileMode.Open, f))
             using (var reader = new StreamReader(s))
