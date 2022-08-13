@@ -139,6 +139,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Strings", "Strings", "{FF21
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HumanizerProject", "HumanizerProject\HumanizerProject.csproj", "{67CB5B4C-1554-43C7-9B35-2A0C17A87094}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitsNetProject", "UnitsNetProject\UnitsNetProject.csproj", "{CCCC8FCE-CDB9-441F-8856-AF2E5DEBA9D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -337,6 +339,10 @@ Global
 		{67CB5B4C-1554-43C7-9B35-2A0C17A87094}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67CB5B4C-1554-43C7-9B35-2A0C17A87094}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67CB5B4C-1554-43C7-9B35-2A0C17A87094}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCCC8FCE-CDB9-441F-8856-AF2E5DEBA9D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCCC8FCE-CDB9-441F-8856-AF2E5DEBA9D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCCC8FCE-CDB9-441F-8856-AF2E5DEBA9D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCCC8FCE-CDB9-441F-8856-AF2E5DEBA9D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -388,6 +394,7 @@ Global
 		{AB6695E0-DD78-4074-9FE5-DB8E368D093E} = {7D016462-6C37-419A-8E2E-3BA4FD507D35}
 		{254145B8-BD93-4FD3-8920-DEFD7F8803C3} = {A95AA7B3-B908-4A4B-A7CE-BB3B24AD48CD}
 		{67CB5B4C-1554-43C7-9B35-2A0C17A87094} = {FF215229-705C-4024-A1C3-01A6F1FD8511}
+		{CCCC8FCE-CDB9-441F-8856-AF2E5DEBA9D5} = {FF215229-705C-4024-A1C3-01A6F1FD8511}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B1C8637B-A32F-467E-A42D-7E145AE39FAC}
