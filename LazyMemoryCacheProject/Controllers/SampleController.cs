@@ -1,15 +1,15 @@
-using MemoryCacheSample.Services;
+using LazyMemoryCacheProject.Services;
 using Microsoft.AspNetCore.Mvc;
 
-namespace MemoryCacheSample.Controllers
+namespace LazyMemoryCacheProject.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class WeatherForecastController : ControllerBase
+    public class SampleController : ControllerBase
     {
         private readonly ISampleService sampleService;
 
-        public WeatherForecastController(ISampleService sampleService)
+        public SampleController(ISampleService sampleService)
         {
             this.sampleService = sampleService;
         }
@@ -17,7 +17,7 @@ namespace MemoryCacheSample.Controllers
         [HttpGet(Name = "GetSample")]
         public async Task<IActionResult> GetSample()
         {
-            var sample = await this.sampleService.GetSampleAsync();
+            var sample = await sampleService.GetSampleAsync();
             return Ok(sample);
         }
     }
