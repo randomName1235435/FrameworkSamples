@@ -1,4 +1,5 @@
 using MemoryCacheSample.Services;
+using Microsoft.Extensions.Caching.Memory;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,7 +13,9 @@ builder.Services.AddMemoryCache();
 builder.Services.AddSingleton<ISampleService, SampleService>();
 builder.Services.AddSingleton<ISampleService>(
     serviceProvider => new CachedSampleService(
-        serviceProvider.GetRequiredService<SampleService>()));
+        serviceProvider.GetRequiredService<SampleService>(),
+        serviceProvider.GetRequiredService<IMemoryCache>()
+));
 
 var app = builder.Build();
 
