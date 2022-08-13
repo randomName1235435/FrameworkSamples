@@ -1,5 +1,5 @@
+using LazyCache;
 using LazyMemoryCacheProject.Services;
-using Microsoft.Extensions.DependencyInjection.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,7 +12,8 @@ builder.Services.AddLazyCache();
 builder.Services.AddSingleton<ISampleService, SampleService>();
 builder.Services.AddSingleton<ISampleService>(
     serviceProvider => new CachedSampleService(
-        serviceProvider.GetRequiredService<SampleService>()));
+        serviceProvider.GetRequiredService<SampleService>(),
+        serviceProvider.GetRequiredService<IAppCache>())); 
 
 var app = builder.Build();
 

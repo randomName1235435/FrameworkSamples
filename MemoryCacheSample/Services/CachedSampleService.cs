@@ -12,9 +12,10 @@ namespace MemoryCacheSample.Services
         {
         }
 
-        public CachedSampleService(ISampleService sampleService)
+        public CachedSampleService(ISampleService sampleService, IMemoryCache memoryCache)
         {
             this.sampleService = sampleService;
+            this.memoryCache = memoryCache;
         }
 
         public async Task<Sample> GetSampleAsync()
