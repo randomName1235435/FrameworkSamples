@@ -70,5 +70,13 @@
             result /= sampleOne;
             result %= sampleOne;
         }
+
+        private void RangeSample()
+        {
+            var sampleList = new[] { 1,2,3,4};
+
+            var range = sampleList[2..2];
+        }
+
     }
 }
