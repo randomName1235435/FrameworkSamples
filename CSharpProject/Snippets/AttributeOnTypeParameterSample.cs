@@ -2,7 +2,7 @@
 
 namespace CSharpProject.Snippets
 {
-    internal class AttributeOnTyypeParameterSample
+    internal class AttributeOnTypeParameterSample
     {
         internal class ReadonlyAttribute : Attribute
         {
