@@ -1,6 +1,6 @@
 ﻿namespace CSharpProject
 {
-    class RecordSample
+    internal class RecordSample
     {
         public void SampleMethod()
         {
@@ -8,6 +8,15 @@
             var sampleWith = sample with { SampleIntProperty = 2 };
 
             var sampleInitRecord = new SampleInitRecord() { SampleProperty = 5 };
+
+
+        }
+
+        private record SampleBase { }
+        private record SampleDerived : SampleBase
+        {
+            public SampleDerived(SampleBase baseClass) : base(baseClass) { }
+            // properties from base will get copied
         }
     }
     internal record SampleRecord(string SampleStringProperty, int SampleIntProperty);
