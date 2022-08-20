@@ -34,6 +34,11 @@ app.Run();
 public interface ISampleService { }
 
 public class SampleServiceOne : ISampleService
-{ }
+{
+    public SampleServiceOne(IEnumerable<ISampleService> servicecCollection)
+    {
+        //servicecCollection will contain SampleServiceOne & SampleServiceTwo
+    }
+}
 public class SampleServiceTwo : ISampleService
 { }
