@@ -145,11 +145,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MemoryCacheSample", "Memory
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LazyMemoryCacheProject", "LazyMemoryCacheProject\LazyMemoryCacheProject.csproj", "{D82B692F-9EE6-41B5-B71D-6E94CD78325B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CastleCoreProject", "CastleCoreProject\CastleCoreProject.csproj", "{9F916497-5559-478A-97F7-F233E1EDC213}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CastleCoreProject", "CastleCoreProject\CastleCoreProject.csproj", "{9F916497-5559-478A-97F7-F233E1EDC213}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Roslyn.Compiling", "Roslyn.Compiling", "{69377DBC-D1E3-4C23-9CAB-AE961A7460FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoslynProject", "RoslynProject\RoslynProject.csproj", "{CC6CC3FA-402E-419A-8526-6B15DB6E9999}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoslynProject", "RoslynProject\RoslynProject.csproj", "{CC6CC3FA-402E-419A-8526-6B15DB6E9999}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightInjectSample", "LightInjectSample\LightInjectSample.csproj", "{9AB4A6E8-3901-4947-9E3D-1C137CF912F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -369,6 +371,10 @@ Global
 		{CC6CC3FA-402E-419A-8526-6B15DB6E9999}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC6CC3FA-402E-419A-8526-6B15DB6E9999}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC6CC3FA-402E-419A-8526-6B15DB6E9999}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AB4A6E8-3901-4947-9E3D-1C137CF912F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AB4A6E8-3901-4947-9E3D-1C137CF912F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AB4A6E8-3901-4947-9E3D-1C137CF912F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AB4A6E8-3901-4947-9E3D-1C137CF912F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -425,6 +431,7 @@ Global
 		{D82B692F-9EE6-41B5-B71D-6E94CD78325B} = {BF3EE28E-CC86-425B-A14F-0B034BFDBD8C}
 		{9F916497-5559-478A-97F7-F233E1EDC213} = {BF3EE28E-CC86-425B-A14F-0B034BFDBD8C}
 		{CC6CC3FA-402E-419A-8526-6B15DB6E9999} = {69377DBC-D1E3-4C23-9CAB-AE961A7460FB}
+		{9AB4A6E8-3901-4947-9E3D-1C137CF912F4} = {137CB97E-EB9F-4B49-BD45-423923303A05}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B1C8637B-A32F-467E-A42D-7E145AE39FAC}
