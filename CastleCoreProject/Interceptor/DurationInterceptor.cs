@@ -1,31 +1,29 @@
-﻿using Castle.DynamicProxy;
-using MemoryCacheSample.Services;
-using Microsoft.Extensions.Caching.Memory;
-using System.Diagnostics;
+﻿using System.Diagnostics;
+using Castle.DynamicProxy;
 
-namespace CastleCoreProject.Services
+namespace CastleCoreProject.Interceptor;
+
+public class DurationInterceptor : IInterceptor
 {
-    public class DurationInterceptor : IInterceptor
+    private readonly ILogger logger;
+
+    public DurationInterceptor(ILogger logger)
     {
-        private readonly ILogger logger;
+        this.logger = logger;
+    }
 
-        public DurationInterceptor(ILogger logger)
+    public void Intercept(IInvocation invocation)
+    {
+        var stopwatch = Stopwatch.StartNew();
+        try
         {
-            this.logger = logger;
+            invocation.Proceed();
         }
-        public void Intercept(IInvocation invocation)
+        finally
         {
-            var stopwatch = Stopwatch.StartNew();
-            try
-            {
-                invocation.Proceed();
-            }
-            finally
-            {
-
-                stopwatch.Stop();
-                logger.LogInformation("{methodName} took {elapsedMs}ms", invocation.Method.Name, stopwatch.ElapsedMilliseconds);
-            }
+            stopwatch.Stop();
+            logger.LogInformation("{methodName} took {elapsedMs}ms", invocation.Method.Name,
+                stopwatch.ElapsedMilliseconds);
         }
     }
 }

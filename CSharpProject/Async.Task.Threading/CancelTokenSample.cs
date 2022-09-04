@@ -1,52 +1,49 @@
-﻿using System;
-using System.Threading;
+﻿using System.Threading;
 using System.Threading.Tasks;
 
-namespace CSharpProject
+namespace CSharpProject.Async.Task.Threading;
+
+internal class CancelTokenSample
 {
-    class CancelTokenSample
+    public async void Sample()
     {
-        public async void Sample()
+        var source = new CancellationTokenSource(1000);
+        var token = source.Token;
+        var result = SampleMethodProperty(token);
+        source.Cancel();
+        source.CancelAfter(1000);
+        source.Token.ThrowIfCancellationRequested();
+        source.Dispose();
+    }
+
+    private int SampleMethodProperty(CancellationToken token)
+    {
+        var count = 0;
+        while (!token.IsCancellationRequested)
         {
-            var source = new CancellationTokenSource(1000);
-            var token = source.Token;
-            var result = SampleMethodProperty(token);
-            source.Cancel();
-            source.CancelAfter(1000);
-            source.Token.ThrowIfCancellationRequested();
-            source.Dispose();
+            Thread.Sleep(1000);
+            count++;
         }
 
-        private int SampleMethodProperty(CancellationToken token)
-        {
-            int count = 0;
-            while (!token.IsCancellationRequested)
-            {
-                Thread.Sleep(1000);
-                count++;
-            }
-            return count;
-        }
-        private Task<int> SampleMethodException(CancellationToken token)
-        {
+        return count;
+    }
 
-            Func<int> y = new Func<int>(() =>
-          {
-              int count = 0;
-              while (true)
-              {
-                  try
-                  {
-                      Thread.Sleep(1000);
-                      count++;
-                  }
-                  catch (TaskCanceledException e)
-                  {
-                      return count;
-                  }
-              }
-          });
-            return Task<int>.Factory.StartNew(y, cancellationToken: token);
-        }
+    private Task<int> SampleMethodException(CancellationToken token)
+    {
+        var y = () =>
+        {
+            var count = 0;
+            while (true)
+                try
+                {
+                    Thread.Sleep(1000);
+                    count++;
+                }
+                catch (TaskCanceledException e)
+                {
+                    return count;
+                }
+        };
+        return Task<int>.Factory.StartNew(y, token);
     }
 }

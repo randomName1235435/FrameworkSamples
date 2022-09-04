@@ -5,21 +5,23 @@ namespace SimpleIocContainerSample
 {
     public class NoRegistrationsSample
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             var installerImplementations =
-            typeof(NoRegistrationsSample).Assembly.ExportedTypes.Where(x =>
-                typeof(ISample).IsAssignableFrom(x)
-                && !x.IsInterface
-                && !x.IsAbstract)
-                .Select(Activator.CreateInstance)
-                .Cast<ISample>()
-                .ToList();
+                typeof(NoRegistrationsSample).Assembly.ExportedTypes.Where(x =>
+                        typeof(ISample).IsAssignableFrom(x)
+                        && !x.IsInterface
+                        && !x.IsAbstract)
+                    .Select(Activator.CreateInstance)
+                    .Cast<ISample>()
+                    .ToList();
 
             installerImplementations.ForEach(x => x.Sample());
         }
     }
-    public interface ISample {
+
+    public interface ISample
+    {
         void Sample();
     }
 }

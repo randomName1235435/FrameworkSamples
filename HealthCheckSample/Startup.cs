@@ -26,23 +26,20 @@ namespace HealthCheckSample
         {
             services.AddControllers();
             var installerImplementations =
-            typeof(Startup).Assembly.ExportedTypes.Where(x =>
-                typeof(IInstaller).IsAssignableFrom(x)
-                && !x.IsInterface
-                && !x.IsAbstract)
-                .Select(Activator.CreateInstance)
-                .Cast<IInstaller>()
-                .ToList();
+                typeof(Startup).Assembly.ExportedTypes.Where(x =>
+                        typeof(IInstaller).IsAssignableFrom(x)
+                        && !x.IsInterface
+                        && !x.IsAbstract)
+                    .Select(Activator.CreateInstance)
+                    .Cast<IInstaller>()
+                    .ToList();
 
             installerImplementations.ForEach(x => x.InstallServices(services, Configuration));
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
+            if (env.IsDevelopment()) app.UseDeveloperExceptionPage();
 
             app.UseHealthChecks("/health", new HealthCheckOptions
             {
@@ -67,10 +64,7 @@ namespace HealthCheckSample
 
             app.UseAuthorization();
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });
+            app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
         }
     }
 }

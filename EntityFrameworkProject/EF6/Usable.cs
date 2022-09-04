@@ -9,7 +9,8 @@ namespace EntityFrameworkProject.EF6
             return new Impl<T, T>(() => new T(), x => x.Dispose(), x => x);
         }
 
-        public static IUsable<TProjection> Create<T, TProjection>(Func<T, TProjection> project) where T : IDisposable, new()
+        public static IUsable<TProjection> Create<T, TProjection>(Func<T, TProjection> project)
+            where T : IDisposable, new()
         {
             return new Impl<T, TProjection>(() => new T(), x => x.Dispose(), project);
         }
@@ -19,7 +20,8 @@ namespace EntityFrameworkProject.EF6
             return new Impl<T, T>(create, x => x.Dispose(), x => x);
         }
 
-        public static IUsable<TProjection> Create<T, TProjection>(Func<T> create, Func<T, TProjection> project) where T : IDisposable
+        public static IUsable<TProjection> Create<T, TProjection>(Func<T> create, Func<T, TProjection> project)
+            where T : IDisposable
         {
             return new Impl<T, TProjection>(create, x => x.Dispose(), project);
         }
@@ -29,7 +31,8 @@ namespace EntityFrameworkProject.EF6
             return new Impl<T, T>(create, destroy, x => x);
         }
 
-        public static IUsable<TProjection> Create<T, TProjection>(Func<T> create, Action<T> destroy, Func<T, TProjection> project)
+        public static IUsable<TProjection> Create<T, TProjection>(Func<T> create, Action<T> destroy,
+            Func<T, TProjection> project)
         {
             return new Impl<T, TProjection>(create, destroy, project);
         }
@@ -50,20 +53,20 @@ namespace EntityFrameworkProject.EF6
 
             public IUsable<TProjection2> Map<TProjection2>(Func<TProjection, TProjection2> project)
             {
-                return new Impl<T, TProjection2>(this.create, this.destroy, x => project(this.project(x)));
+                return new Impl<T, TProjection2>(create, destroy, x => project(this.project(x)));
             }
 
             public R Use<R>(Func<TProjection, R> f)
             {
-                var ctx = this.create();
+                var ctx = create();
 
                 try
                 {
-                    return f(this.project(ctx));
+                    return f(project(ctx));
                 }
                 finally
                 {
-                    this.destroy(ctx);
+                    destroy(ctx);
                 }
             }
         }

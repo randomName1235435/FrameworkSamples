@@ -1,3 +1,5 @@
-﻿internal class SampleService
+﻿namespace CliFxSample;
+
+internal class SampleService
 {
 }

@@ -1,7 +1,6 @@
-﻿namespace LazyMemoryCacheProject.Services
+﻿namespace LazyMemoryCacheProject.Services;
+
+public interface ISampleService
 {
-    public interface ISampleService
-    {
-        Task<Sample> GetSampleAsync();
-    }
+    Task<Sample> GetSampleAsync();
 }

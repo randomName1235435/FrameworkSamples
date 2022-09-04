@@ -5,6 +5,6 @@ namespace HealthCheckSample.Installer
 {
     public interface IInstaller
     {
-        void InstallServices(IServiceCollection serviceCollection,IConfiguration configuration);
+        void InstallServices(IServiceCollection serviceCollection, IConfiguration configuration);
     }
 }

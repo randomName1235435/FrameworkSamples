@@ -10,7 +10,7 @@ namespace EntityFrameworkProject.EF5
         ConnectionState ConnectionState { get; }
 
         IDbSet<SamplePoco> SampleTable { get; }
-       
+
         void OpenConnection();
         ObjectResult<int?> SampleStoredProcedure();
 

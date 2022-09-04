@@ -1,5 +1,6 @@
 ﻿using Autofac;
-using AutofacSample;
+
+namespace AutofacSample;
 
 public static class Bootstrapper
 {
@@ -14,5 +15,3 @@ public static class Bootstrapper
         var container = builder.Build();
     }
 }
-
-

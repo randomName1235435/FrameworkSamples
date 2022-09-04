@@ -1,10 +1,11 @@
-﻿namespace CSharpProject
+﻿namespace CSharpProject.LanguageFeatures;
+
+internal interface DefaultInterfaceImplementationSample
 {
-    interface DefaultInterfaceImplementationSample
+    void Sample(string sampleParam);
+
+    void Sample(int sampleParam)
     {
-        void Sample(string sampleParam);
-        void Sample(int sampleParam) {
-            Sample(sampleParam.ToString());
-        }
+        Sample(sampleParam.ToString());
     }
 }

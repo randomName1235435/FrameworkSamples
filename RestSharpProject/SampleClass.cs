@@ -10,7 +10,6 @@ namespace RestSharpProject
     {
         public void SampleMethod()
         {
-
             var client = new RestClient("https://api.twitter.com/1.1");
             client.Authenticator = new HttpBasicAuthenticator("username", "password");
 

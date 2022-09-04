@@ -15,7 +15,7 @@ builder.Services.AddSingleton<ISampleService>(
     serviceProvider => new CachedSampleService(
         serviceProvider.GetRequiredService<SampleService>(),
         serviceProvider.GetRequiredService<IMemoryCache>()
-));
+    ));
 
 var app = builder.Build();
 

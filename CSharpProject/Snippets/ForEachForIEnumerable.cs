@@ -1,16 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace CSharpProject.Snippets
+namespace CSharpProject.Snippets;
+
+internal static class ForEachForIEnumerable
 {
-    internal static class ForEachForIEnumerable
+    public static void ForEach<T>(this IEnumerable<T> enumeration, Action<T> action)
     {
-        public static void ForEach<T>(this IEnumerable<T> enumeration, Action<T> action)
-        {
-            foreach (T item in enumeration)
-            {
-                action(item);
-            }
-        }
+        foreach (var item in enumeration) action(item);
     }
 }

@@ -1,7 +1,6 @@
-namespace MemoryCacheSample
+namespace MemoryCacheSample;
+
+public class Sample
 {
-    public class Sample
-    {
-        public int SampleProperty { get; set; }
-    }
+    public int SampleProperty { get; set; }
 }

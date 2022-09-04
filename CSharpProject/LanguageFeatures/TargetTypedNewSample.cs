@@ -1,17 +1,16 @@
-﻿namespace CSharpProject
+﻿namespace CSharpProject.LanguageFeatures;
+
+internal class TargetTypedNewSample
 {
-    class TargetTypedNewSample
+    private TargetTypedNewSample sample = new();
+
+    private TargetTypedNewSample SampleMethodWithParameter(TargetTypedNewSample sample)
     {
-        TargetTypedNewSample sample = new();
+        return new TargetTypedNewSample();
+    }
 
-        private TargetTypedNewSample SampleMethodWithParameter(TargetTypedNewSample sample)
-        {
-            return new();
-        }
-
-        private TargetTypedNewSample SampleMethod()
-        {
-            return SampleMethodWithParameter(new());
-        }
+    private TargetTypedNewSample SampleMethod()
+    {
+        return SampleMethodWithParameter(new TargetTypedNewSample());
     }
 }

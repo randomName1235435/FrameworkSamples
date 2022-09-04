@@ -1,6 +1,6 @@
 ﻿namespace StrongInjectSample
 {
-    class SampleApplication
+    internal class SampleApplication
     {
         private readonly ISampleService sampleService;
 

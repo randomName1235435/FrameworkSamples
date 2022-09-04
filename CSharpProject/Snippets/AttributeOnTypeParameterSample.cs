@@ -1,14 +1,14 @@
 ﻿using System;
 
-namespace CSharpProject.Snippets
+namespace CSharpProject.Snippets;
+
+internal class AttributeOnTypeParameterSample
 {
-    internal class AttributeOnTypeParameterSample
+    internal class ReadonlyAttribute : Attribute
     {
-        internal class ReadonlyAttribute : Attribute
-        {
-        }
-        private void Sample<[Readonly] T>() { 
-        
-        }
+    }
+
+    private void Sample<[Readonly] T>()
+    {
     }
 }

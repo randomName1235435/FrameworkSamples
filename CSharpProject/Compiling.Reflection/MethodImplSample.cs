@@ -1,10 +1,11 @@
 ﻿using System.Runtime.CompilerServices;
 
-namespace CSharpProject
+namespace CSharpProject.Compiling.Reflection;
+
+internal class MethodImplSample
 {
-    class MethodImplSample
+    [MethodImpl(MethodImplOptions.NoInlining | MethodImplOptions.NoOptimization)]
+    private void SampleMethod()
     {
-        [MethodImpl(MethodImplOptions.NoInlining | MethodImplOptions.NoOptimization)]
-        private void SampleMethod() { }
     }
 }

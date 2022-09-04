@@ -1,29 +1,24 @@
 ﻿using LanguageExt.Common;
 
-namespace LanguageExtProject
+namespace LanguageExtProject;
+
+internal class ResultSample
 {
-    internal class ResultSample
+    private Result<bool> Sample()
     {
-        private Result<bool> Sample()
-        {
+        var sampleException = new Exception();
 
-            var sampleException = new Exception();
+        return new Result<bool>(sampleException);
+    }
 
-            return new Result<bool>(sampleException);
-        }
-
-        private bool SampleMatch()
-        {
-            return Sample().Match<bool>(r =>
-            {
-                return r;
-            },
+    private bool SampleMatch()
+    {
+        return Sample().Match<bool>(r => { return r; },
             e =>
             {
                 Console.WriteLine(e.Message);
                 return false;
             }
-            );
-        }
+        );
     }
 }

@@ -2,7 +2,7 @@ using System.Threading.Tasks;
 using Grpc.Core;
 using Microsoft.Extensions.Logging;
 
-namespace GrpcServerProject
+namespace GrpcServerProject.Services
 {
     public class SampleService : Sample.SampleBase
     {

@@ -14,8 +14,9 @@ namespace DotNetFrameworkSample
             const string user = "sampleUser";
             const string pw = "samplePw";
             const string domain = "sampleDomain";
-            DirectoryEntry dirE = new DirectoryEntry($"LDAP://{serverIp}/CN=Users,DC={dcName1},DC={dcName2},DC={dcName3}", $@"{domain}\{user}", pw);
-            DirectorySearcher dirS = new DirectorySearcher(dirE);
+            var dirE = new DirectoryEntry($"LDAP://{serverIp}/CN=Users,DC={dcName1},DC={dcName2},DC={dcName3}",
+                $@"{domain}\{user}", pw);
+            var dirS = new DirectorySearcher(dirE);
 
             dirS.PageSize = 100;
             dirS.Filter = "(&(objectClass=User)(sAMAccountName=" + user + "))";

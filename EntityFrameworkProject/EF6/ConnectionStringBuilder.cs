@@ -1,5 +1,4 @@
-﻿
-namespace EntityFrameworkProject.EF6
+﻿namespace EntityFrameworkProject.EF6
 {
     using System.Data.Entity.Core.EntityClient;
     using System.Data.SqlClient;
@@ -16,9 +15,9 @@ namespace EntityFrameworkProject.EF6
 
         private static EntityConnectionStringBuilder GetConnectionStringBuilder()
         {
-            string providerName = "System.Data.SqlClient";
-            string serverName = "";
-            string databaseName = "";
+            var providerName = "System.Data.SqlClient";
+            var serverName = "";
+            var databaseName = "";
             var sqlBuilder = new SqlConnectionStringBuilder
             {
                 DataSource = serverName,

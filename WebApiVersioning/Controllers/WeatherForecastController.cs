@@ -9,7 +9,7 @@ namespace WebApiVersioning.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    [ApiVersion("1.0", Deprecated =true)]
+    [ApiVersion("1.0", Deprecated = true)]
     [ApiVersion("2.0")]
     public class WeatherForecastController : ControllerBase
     {
@@ -31,12 +31,12 @@ namespace WebApiVersioning.Controllers
         {
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = rng.Next(-20, 55),
-                Summary = Summaries[rng.Next(Summaries.Length)]
-            })
-            .ToArray();
+                {
+                    Date = DateTime.Now.AddDays(index),
+                    TemperatureC = rng.Next(-20, 55),
+                    Summary = Summaries[rng.Next(Summaries.Length)]
+                })
+                .ToArray();
         }
 
         [HttpGet]
@@ -45,12 +45,12 @@ namespace WebApiVersioning.Controllers
         {
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = rng.Next(-20, 55),
-                Summary = Summaries[rng.Next(Summaries.Length)]
-            })
-            .ToArray();
+                {
+                    Date = DateTime.Now.AddDays(index),
+                    TemperatureC = rng.Next(-20, 55),
+                    Summary = Summaries[rng.Next(Summaries.Length)]
+                })
+                .ToArray();
         }
     }
 }

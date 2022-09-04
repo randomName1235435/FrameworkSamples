@@ -10,12 +10,14 @@ namespace AutofixtureProject
         [TestMethod]
         public void TestMethod1()
         {
-            Fixture fixture = new Fixture();
+            var fixture = new Fixture();
 
-            int param = fixture.Create<int>();
+            var param = fixture.Create<int>();
             SampleMethod(param);
         }
 
-        private void SampleMethod(int param) { }
+        private void SampleMethod(int param)
+        {
+        }
     }
 }

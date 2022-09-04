@@ -7,7 +7,7 @@
     {
         public SimpleValidationResult()
         {
-            this.PropertyPaths = new List<string>();
+            PropertyPaths = new List<string>();
         }
 
         public T ValidatedObject { get; set; }

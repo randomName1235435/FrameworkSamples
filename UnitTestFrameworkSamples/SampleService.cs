@@ -1,10 +1,9 @@
 ﻿namespace UnitTestFrameworkSamples
 {
-    class SampleService
+    internal class SampleService
     {
         public SampleService(ISampleInterface param)
         {
-
         }
     }
 }

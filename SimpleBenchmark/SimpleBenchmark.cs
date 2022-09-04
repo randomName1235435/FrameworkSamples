@@ -7,20 +7,17 @@ namespace SimpleBenchmark
     {
         public BenchmarkResult Benchmark(Action toBenchmark, bool warmUp = true, int timesToRun = 1)
         {
-            BenchmarkResult result = new BenchmarkResult(timesToRun);
+            var result = new BenchmarkResult(timesToRun);
             if (warmUp)
 
             {
                 Console.WriteLine("Start benchmark warmup");
-                for (int k = 0; k < 30; k++)
-                {
-                    toBenchmark();
-                }
+                for (var k = 0; k < 30; k++) toBenchmark();
                 Console.WriteLine("End benchmark warmup");
             }
 
-            Stopwatch w = new Stopwatch();
-            int i = 0;
+            var w = new Stopwatch();
+            var i = 0;
             var memoryBefore = GC.GetTotalAllocatedBytes();
 
             while (i < timesToRun)
@@ -34,14 +31,16 @@ namespace SimpleBenchmark
                 result.RunTime[i] = w.ElapsedMilliseconds;
                 i++;
             }
+
             var allocatedMemory = GC.GetTotalAllocatedBytes() - memoryBefore;
 
             double sum = 0;
-            for (int j = 0; j < result.RunTime.Length; j++)
+            for (var j = 0; j < result.RunTime.Length; j++)
             {
                 Console.WriteLine($"Run {j}: {result.RunTime[j]} ms");
                 sum += result.RunTime[j];
             }
+
             var mean = sum / 30;
 
             Console.WriteLine($"mean: {string.Format("{0:N4}", mean)} ms");
@@ -56,8 +55,8 @@ namespace SimpleBenchmark
         public BenchmarkResult(int countORuntimes)
         {
             RunTime = new long[countORuntimes];
-
         }
+
         public long[] RunTime { get; internal set; }
     }
 }

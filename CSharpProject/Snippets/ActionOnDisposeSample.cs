@@ -1,27 +1,31 @@
 ﻿using System;
 
-namespace CSharpProject
+namespace CSharpProject.Snippets;
+
+internal class ActionOnDisposeSample
 {
-    class ActionOnDisposeSample
+    public void Sample()
     {
-        public void Sample()
+        using (new ActionOnDispose(() =>
+               {
+                   /*do stuff*/
+               }))
         {
-            using (new ActionOnDispose(() => { /*do stuff*/ }))
-            {
-            }
         }
     }
-    public class ActionOnDispose : IDisposable
-    {
-        private readonly Action actionOnDispose;
+}
 
-        public ActionOnDispose(Action actionOnDispose)
-        {
-            this.actionOnDispose = actionOnDispose;
-        }
-        public void Dispose()
-        {
-            this.actionOnDispose();
-        }
+public class ActionOnDispose : IDisposable
+{
+    private readonly Action actionOnDispose;
+
+    public ActionOnDispose(Action actionOnDispose)
+    {
+        this.actionOnDispose = actionOnDispose;
+    }
+
+    public void Dispose()
+    {
+        actionOnDispose();
     }
 }

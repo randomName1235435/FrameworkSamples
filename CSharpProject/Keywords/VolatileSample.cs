@@ -1,35 +1,35 @@
 ﻿using System.Threading;
 
-namespace CSharpProject
+namespace CSharpProject.Keywords;
+
+internal class VolatileSample
 {
-    class VolatileSample
+    private void SampleMethod()
     {
-        void SampleMethod() {
+        var sample = new Sample();
+        var sampleThread = new Thread(() => sample.SampleMethod());
 
-            var sample = new Sample();
-            var sampleThread = new Thread(() => sample.SampleMethod());
+        sampleThread.Start();
 
-            sampleThread.Start();
-
-            while (sampleThread.IsAlive)
-            {
-            }
-            sample.PleaseStop();
-        }
-    }
-    class Sample
-    {
-        volatile bool shouldStop = false;
-
-        internal void SampleMethod() {
-            while (!shouldStop)
-            {
-                Thread.Sleep(1000);
-            }
-        }
-        internal void PleaseStop()
+        while (sampleThread.IsAlive)
         {
-            shouldStop = true;
         }
+
+        sample.PleaseStop();
+    }
+}
+
+internal class Sample
+{
+    private volatile bool shouldStop;
+
+    internal void SampleMethod()
+    {
+        while (!shouldStop) Thread.Sleep(1000);
+    }
+
+    internal void PleaseStop()
+    {
+        shouldStop = true;
     }
 }

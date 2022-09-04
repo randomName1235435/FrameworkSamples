@@ -1,16 +1,16 @@
 ﻿using System.Threading;
 
-namespace CSharpProject
+namespace CSharpProject.Keywords;
+
+internal class GotoSample
 {
-    class GotoSample
+    private void SampleMethod()
     {
-        void SampleMethod() {
-            SampleOne:
-            Thread.Sleep(0);
-            SampleTwo:
-            Thread.Sleep(0);
-            goto SampleOne;
-            goto SampleTwo;
-        }
+        SampleOne:
+        Thread.Sleep(0);
+        SampleTwo:
+        Thread.Sleep(0);
+        goto SampleOne;
+        goto SampleTwo;
     }
 }

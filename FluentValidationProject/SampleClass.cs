@@ -17,7 +17,9 @@ namespace FluentValidationProject
             return true;
         }
     }
-    public class SampleClassToValidate {
+
+    public class SampleClassToValidate
+    {
         public int SampleProperty { get; set; }
     }
 }

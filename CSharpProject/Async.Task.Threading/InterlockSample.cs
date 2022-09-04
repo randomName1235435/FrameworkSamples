@@ -1,17 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading;
+﻿using System.Threading;
 
-namespace CSharpProject
+namespace CSharpProject.Async.Task.Threading;
+
+public class InterlockSample
 {
-    public class InterlockSample
+    private readonly int sample;
+
+    public InterlockSample()
     {
-        int sample = 0;
-        public InterlockSample()
-        {
-            Interlocked.Increment(ref sample);
-        }
-        
+        Interlocked.Increment(ref sample);
     }
 }

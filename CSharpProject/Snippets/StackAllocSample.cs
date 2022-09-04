@@ -1,12 +1,11 @@
 ﻿using System;
 
-namespace CSharpProject
+namespace CSharpProject.Snippets;
+
+internal class StackAllocSample
 {
-    class StackAllocSample
+    private void SampleMethod()
     {
-        void SampleMethod()
-        {
-            Span<int> sampleInts = stackalloc int[] { 1, 2, 3, 4, 5 };
-        }
+        Span<int> sampleInts = stackalloc int[] { 1, 2, 3, 4, 5 };
     }
 }

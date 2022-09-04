@@ -1,10 +1,8 @@
-﻿namespace JabSample
-{
-    public class SampleService : ISampleService
-    {
-        public SampleService()
-        {
+﻿namespace JabSample;
 
-        }
+public class SampleService : ISampleService
+{
+    public SampleService()
+    {
     }
 }

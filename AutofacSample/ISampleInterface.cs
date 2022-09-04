@@ -1,6 +1,5 @@
-﻿namespace AutofacSample
+﻿namespace AutofacSample;
+
+public interface ISampleInterface
 {
-    public interface ISampleInterface
-    {
-    }
 }

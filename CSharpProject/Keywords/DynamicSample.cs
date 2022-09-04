@@ -1,14 +1,13 @@
 ﻿using System;
 
-namespace CSharpProject.Keywords
+namespace CSharpProject.Keywords;
+
+internal class DynamicSample
 {
-    internal class DynamicSample
+    private void Sample()
     {
-        private void Sample() {
+        dynamic sample = null;
 
-            dynamic sample = null;
-
-            Console.WriteLine(nameof(sample.HelloWord)); // actuall works :)
-        }
+        Console.WriteLine(nameof(sample.HelloWord)); // actuall works :)
     }
 }

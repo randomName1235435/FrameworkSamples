@@ -1,7 +1,6 @@
-namespace CastleCoreProject
+namespace CastleCoreProject;
+
+public class Sample
 {
-    public class Sample
-    {
-        public int SampleProperty { get; set; }
-    }
+    public int SampleProperty { get; set; }
 }

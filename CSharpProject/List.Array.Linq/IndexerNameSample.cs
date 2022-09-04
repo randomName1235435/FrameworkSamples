@@ -1,16 +1,16 @@
 ﻿using System.Runtime.CompilerServices;
 
-namespace CSharpProject.List.Array.Linq
+namespace CSharpProject.List.Array.Linq;
+
+internal class IndexerNameSample
 {
-    internal class IndexerNameSample
+    private int[] sampleCollection = null;
+
+    [IndexerName("SampleIndexerName")]
+    //without attribute compiler generate a private field name 'Item' for accessing index
+    public int this[int index]
     {
-        private int[] sampleCollection = null;
-        [IndexerName("SampleIndexerName")]
-        //without attribute compiler generate a private field name 'Item' for accessing index
-        public int this[int index]
-        {
-            get => sampleCollection[index];
-            set => sampleCollection[index] = value;
-        }
+        get => sampleCollection[index];
+        set => sampleCollection[index] = value;
     }
 }

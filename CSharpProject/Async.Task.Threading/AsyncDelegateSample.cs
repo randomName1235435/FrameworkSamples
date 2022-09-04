@@ -1,21 +1,17 @@
 ﻿using System;
-using System.Threading.Tasks;
 
-namespace CSharpProject
+namespace CSharpProject.Async.Task.Threading;
+
+public class AsyncDelegateSample
 {
-    public class AsyncDelegateSample
+    public async System.Threading.Tasks.Task SampleMethod()
     {
-        public async Task SampleMethod() {
-            await ExecuteFuncSample(async () =>
-            {
-                await Task.Delay(0);
-            });
-        }
+        await ExecuteFuncSample(async () => { await System.Threading.Tasks.Task.Delay(0); });
+    }
 
-        private async Task ExecuteFuncSample(Func<Task> func)
-        {
-            await Task.Delay(0);
-            await func();
-        }
+    private async System.Threading.Tasks.Task ExecuteFuncSample(Func<System.Threading.Tasks.Task> func)
+    {
+        await System.Threading.Tasks.Task.Delay(0);
+        await func();
     }
 }

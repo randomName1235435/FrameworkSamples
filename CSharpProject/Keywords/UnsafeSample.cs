@@ -1,19 +1,15 @@
 ﻿using System;
 
-namespace CSharpProject
+namespace CSharpProject.Keywords;
+
+internal class UnsafeSample
 {
-    class UnsafeSample
+    private unsafe void SampleMethod()
     {
-        unsafe void SampleMethod() {
+        var sampleInteger = 0;
 
-            int sampleInteger = 0;
-
-            unsafe
-            {
-                int* samplePointer = &sampleInteger;
-                Console.WriteLine($"value: {*samplePointer}");
-                Console.WriteLine($"value: {samplePointer->ToString()}");
-            }
-        }
+        var samplePointer = &sampleInteger;
+        Console.WriteLine($"value: {*samplePointer}");
+        Console.WriteLine($"value: {samplePointer->ToString()}");
     }
 }

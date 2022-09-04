@@ -1,7 +1,5 @@
-namespace AspDotNetBuiltInSample
-{
-    public class SampleDto
-    {
+namespace AspDotNetBuiltInSample;
 
-    }
+public class SampleDto
+{
 }

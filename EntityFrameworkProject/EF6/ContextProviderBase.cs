@@ -6,31 +6,26 @@
     public abstract class ContextProviderBase<TContext> : IContextProvider<TContext>
         where TContext : class
     {
-        protected readonly Dictionary<object, WeakReference<TContext>> openContexts = new Dictionary<object,WeakReference<TContext>>(new ReferenceEqualityComparer());
-        
+        protected readonly Dictionary<object, WeakReference<TContext>> openContexts =
+            new Dictionary<object, WeakReference<TContext>>(new ReferenceEqualityComparer());
+
         public TContext Provide(object token = null)
         {
             TContext ctx;
 
-            if (token == null)
-            {
-                return this.CreateContext();
-            }
+            if (token == null) return CreateContext();
 
             WeakReference<TContext> weakCtx;
 
-            if (!this.openContexts.TryGetValue(token, out weakCtx))
+            if (!openContexts.TryGetValue(token, out weakCtx))
             {
                 weakCtx = new WeakReference<TContext>(null);
-                this.openContexts[token] = weakCtx;
+                openContexts[token] = weakCtx;
             }
 
             weakCtx.TryGetTarget(out ctx);
 
-            if (ctx == null)
-            {
-                ctx = this.CreateContext();
-            }
+            if (ctx == null) ctx = CreateContext();
 
             weakCtx.SetTarget(ctx);
             return ctx;

@@ -1,6 +1,6 @@
 using Castle.DynamicProxy;
+using CastleCoreProject.Interceptor;
 using CastleCoreProject.Services;
-using MemoryCacheSample.Services;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);

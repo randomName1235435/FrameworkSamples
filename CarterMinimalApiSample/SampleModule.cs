@@ -3,7 +3,6 @@ using Carter.ModelBinding;
 using Carter.Response;
 using Carter.Request;
 using Carter.OpenApi;
-
 using System;
 using Microsoft.AspNetCore.Http;
 
@@ -14,10 +13,7 @@ namespace CarterMinimalApiSample
     {
         public SampleModule()
         {
-            Get("/Sample", async (request, response) =>
-            {
-                await response.WriteAsync("SampleResponse");
-            });
+            Get("/Sample", async (request, response) => { await response.WriteAsync("SampleResponse"); });
             Post("/Sample", async (request, response) =>
             {
                 var sample = await request.Bind<SampleClass>();
@@ -34,7 +30,7 @@ namespace CarterMinimalApiSample
             SampleIntProperty = sampleIntProperty;
         }
 
-        string SampleStringProperty { get; set; }
-        int SampleIntProperty { get; set; }
+        private string SampleStringProperty { get; set; }
+        private int SampleIntProperty { get; set; }
     }
 }

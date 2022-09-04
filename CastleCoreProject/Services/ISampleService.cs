@@ -1,9 +1,6 @@
-﻿using CastleCoreProject;
+﻿namespace CastleCoreProject.Services;
 
-namespace MemoryCacheSample.Services
+public interface ISampleService
 {
-    public interface ISampleService
-    {
-         Task<Sample> GetSampleAsync();
-    }
+    Task<Sample> GetSampleAsync();
 }

@@ -1,61 +1,61 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace CSharpProject.Snippets
+namespace CSharpProject.Snippets;
+
+internal class CliWriteTreeSample
 {
-    internal class CliWriteTreeSample
+    private const string _cross = " ├─";
+    private const string _corner = " └─";
+    private const string _vertical = " │ ";
+    private const string _space = "   ";
+
+    private static void Sample()
     {
-        private const string _cross = " ├─";
-        private const string _corner = " └─";
-        private const string _vertical = " │ ";
-        private const string _space = "   ";
+        var topLevelNodes = CreateNodeList();
 
-        static void Sample()
+        topLevelNodes.ForEach(item => PrintNode(item, ""));
+    }
+
+    private static void PrintNode(Node node, string indent)
+    {
+        Console.WriteLine(node.Title);
+
+        var numberOfChildren = node.Children.Length;
+        for (var i = 0; i < numberOfChildren; i++)
         {
-            List<Node> topLevelNodes = CreateNodeList();
+            var child = node.Children[i];
+            var isLast = i == numberOfChildren - 1;
+            PrintChildNode(child, indent, isLast);
+        }
+    }
 
-            topLevelNodes.ForEach(item => PrintNode(item, indent: ""));
+    private static void PrintChildNode(Node node, string indent, bool isLast)
+    {
+        Console.Write(indent);
+
+        if (isLast)
+        {
+            Console.Write(_corner);
+            indent += _space;
+        }
+        else
+        {
+            Console.Write(_cross);
+            indent += _vertical;
         }
 
-        static void PrintNode(Node node, string indent)
-        {
-            Console.WriteLine(node.Title);
+        PrintNode(node, indent);
+    }
 
-            var numberOfChildren = node.Children.Length;
-            for (var i = 0; i < numberOfChildren; i++)
-            {
-                var child = node.Children[i];
-                var isLast = (i == (numberOfChildren - 1));
-                PrintChildNode(child, indent, isLast);
-            }
-        }
+    private static List<Node> CreateNodeList()
+    {
+        return null; // add your stuff here
+    }
 
-        static void PrintChildNode(Node node, string indent, bool isLast)
-        {
-            Console.Write(indent);
-
-            if (isLast)
-            {
-                Console.Write(_corner);
-                indent += _space;
-            }
-            else
-            {
-                Console.Write(_cross);
-                indent += _vertical;
-            }
-
-            PrintNode(node, indent);
-        }
-
-        private static List<Node> CreateNodeList()
-        {
-            return null; // add your stuff here
-        }
-        private class Node
-        {
-            public bool Title { get; internal set; }
-            public Node[] Children { get; internal set; }
-        }
+    private class Node
+    {
+        public bool Title { get; internal set; }
+        public Node[] Children { get; internal set; }
     }
 }

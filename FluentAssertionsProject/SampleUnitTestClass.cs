@@ -10,9 +10,10 @@ namespace FluentAssertionsProject
         [TestMethod]
         public void SampleShould()
         {
-            string result = "";
+            var result = "";
             result.Should().StartWith("").And.Contain("").And.BeEmpty().And.HaveLength(0);
         }
+
         [TestMethod]
         public void ShouldThrowExceptionSample()
         {

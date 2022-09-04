@@ -1,16 +1,9 @@
-﻿namespace AutofacSample
+﻿namespace AutofacSample;
+
+public class SampleClass : ISampleInterface
 {
-    public class SampleClass : ISampleInterface
+    public SampleClass(ISampleInterface sample)
     {
-
-        public SampleClass(ISampleInterface sample)
-        {
-            Bootstrapper.Run();
-        }
-
-
-
+        Bootstrapper.Run();
     }
 }
-
-

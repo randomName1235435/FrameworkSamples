@@ -1,18 +1,18 @@
 ﻿using System.Buffers;
+using CSharpProject.Snippets;
 
-namespace CSharpProject.List.Array.Linq
+namespace CSharpProject.List.Array.Linq;
+
+internal class ArrayPoolSample
 {
-    internal class ArrayPoolSample
+    private void Sample()
     {
-        private void Sample()
+        var arrayPool = ArrayPool<byte>.Shared;
+        var buffer = arrayPool.Rent(1000);
+        //by default array is not cleared
+        using (new ActionOnDispose(() => { arrayPool.Return(buffer); }))
         {
-            var arrayPool = ArrayPool<byte>.Shared;
-            var buffer = arrayPool.Rent(1000);
-            //by default array is not cleared
-            using (new ActionOnDispose(() => { arrayPool.Return(buffer); }))
-            {
-                //do stuff with array
-            }
+            //do stuff with array
         }
     }
 }

@@ -8,14 +8,15 @@ namespace BenchmarkDotNetProject
 {
     public class SampleMain
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             BenchmarkRunner.Run<SampleBenchmarkClass>();
             Console.ReadLine();
         }
     }
 
-    [MemoryDiagnoser, Orderer(SummaryOrderPolicy.FastestToSlowest)]
+    [MemoryDiagnoser]
+    [Orderer(SummaryOrderPolicy.FastestToSlowest)]
     public class SampleBenchmarkClass
     {
         [Benchmark]

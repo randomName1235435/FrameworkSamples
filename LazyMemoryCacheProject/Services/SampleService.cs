@@ -1,10 +1,9 @@
-﻿namespace LazyMemoryCacheProject.Services
+﻿namespace LazyMemoryCacheProject.Services;
+
+public class SampleService : ISampleService
 {
-    public class SampleService : ISampleService
+    public Task<Sample> GetSampleAsync()
     {
-        public Task<Sample> GetSampleAsync()
-        {
-            return null;
-        }
+        return null;
     }
 }

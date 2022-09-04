@@ -1,12 +1,13 @@
-﻿namespace CSharpProject
-{
-    internal class SampleCtorParamInitWithTempTuples
-    {
-        public int SampleProperty1 { get; init; }
-        public int SampleProperty2 { get; init; }
-        public int OptionalProperty { get; }
+﻿namespace CSharpProject.ClassFeatures;
 
-        public SampleCtorParamInitWithTempTuples(int sampleProperty1, int sampleProperty2, int optionalProperty = default)
-            => (this.SampleProperty1, this.SampleProperty2, this.OptionalProperty) = (sampleProperty1, sampleProperty2, optionalProperty);
+internal class SampleCtorParamInitWithTempTuples
+{
+    public SampleCtorParamInitWithTempTuples(int sampleProperty1, int sampleProperty2, int optionalProperty = default)
+    {
+        (SampleProperty1, SampleProperty2, OptionalProperty) = (sampleProperty1, sampleProperty2, optionalProperty);
     }
+
+    public int SampleProperty1 { get; init; }
+    public int SampleProperty2 { get; init; }
+    public int OptionalProperty { get; }
 }

@@ -1,5 +1,6 @@
-﻿using Microsoft.AspNetCore.Builder;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
+using Microsoft.AspNetCore.Builder;
+using MinimalApiProject;
 
 var app = WebApplication.CreateBuilder(args).Build();
 app.MapGet("/", () => "SampleMessage");
@@ -19,5 +20,7 @@ app.Run();
 //var app = WebApplication.Create();
 //app.Run();
 
-record Sample(string FirstSampleProperty, int SecondSampleProperty);
-
+namespace MinimalApiProject
+{
+    internal record Sample(string FirstSampleProperty, int SecondSampleProperty);
+}

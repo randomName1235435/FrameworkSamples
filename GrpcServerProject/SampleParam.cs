@@ -1,7 +1,9 @@
 using System.Text.Json.Serialization;
 
-public partial class Sampleparam
+namespace GrpcServerProject
 {
-    [JsonPropertyName(nameof(SampleProp))]
-    public int SampleProp { get; set; }
+    public class Sampleparam
+    {
+        [JsonPropertyName(nameof(SampleProp))] public int SampleProp { get; set; }
+    }
 }

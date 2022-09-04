@@ -28,12 +28,13 @@ namespace EntityFrameworkProject.EF5
             set => Context.Configuration.ProxyCreationEnabled = value;
         }
 
-        
+
         public IDbSet<SamplePoco> SampleTable => Context.SampleTable;
 
         public SampleEntities Context { get; }
 
-        public virtual ObjectResult<SampleResultClass> SampleStoredProcedureWithParam(int? sampleIntParam, string sampleStringParam)
+        public virtual ObjectResult<SampleResultClass> SampleStoredProcedureWithParam(int? sampleIntParam,
+            string sampleStringParam)
         {
             return Context.SampleStoredProcedureWithParam(sampleIntParam, sampleStringParam);
         }

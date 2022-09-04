@@ -1,12 +1,11 @@
-﻿namespace JabSample
-{
-    class SampleApplication
-    {
-        private readonly ISampleService sampleService;
+﻿namespace JabSample;
 
-        public SampleApplication(ISampleService sampleService)
-        {
-            this.sampleService = sampleService;
-        }
+internal class SampleApplication
+{
+    private readonly ISampleService sampleService;
+
+    public SampleApplication(ISampleService sampleService)
+    {
+        this.sampleService = sampleService;
     }
 }

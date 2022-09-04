@@ -4,14 +4,13 @@ namespace DotNetCoreSample
 {
     public class SingletonSample
     {
-        public static Lazy<SingletonSample> lazySingletonInstance = new Lazy<SingletonSample>(() => new SingletonSample());
-        private SingletonSample() { }
-        public static SingletonSample GetInstance
+        public static Lazy<SingletonSample> lazySingletonInstance =
+            new Lazy<SingletonSample>(() => new SingletonSample());
+
+        private SingletonSample()
         {
-            get
-            {
-                return lazySingletonInstance.Value;
-            }
         }
+
+        public static SingletonSample GetInstance => lazySingletonInstance.Value;
     }
 }

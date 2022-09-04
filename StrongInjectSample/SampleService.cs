@@ -1,6 +1,6 @@
 ﻿namespace StrongInjectSample
 {
-    class SampleService : ISampleService
+    internal class SampleService : ISampleService
     {
     }
 }

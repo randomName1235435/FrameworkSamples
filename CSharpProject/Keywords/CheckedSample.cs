@@ -1,18 +1,16 @@
-﻿namespace CSharpProject
+﻿namespace CSharpProject.Keywords;
+
+internal class CheckedSample
 {
-    class CheckedSample
+    private void SampleMethod()
     {
-        void SampleMethod()
+        var sampleInt = int.MaxValue;
+
+        checked
         {
-            int sampleInt = int.MaxValue;
-
-            checked
-            {
-                sampleInt++; //throws exception
-            }
-
-            sampleInt++; // throws no exception but i will be 0
-
+            sampleInt++; //throws exception
         }
+
+        sampleInt++; // throws no exception but i will be 0
     }
 }

@@ -2,7 +2,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using UnitTestFrameworkSamples;
 
-namespace Moq
+namespace MoqProject
 {
     [TestClass]
     public class SampleUnitTestClass
@@ -10,14 +10,14 @@ namespace Moq
         [TestMethod]
         public void SetupSample()
         {
-            Mock<ISampleInterface> moq = new Mock<ISampleInterface>();
+            var moq = new Mock<ISampleInterface>();
             moq.Setup(x => x.SampleMethod(It.IsAny<string>())).Returns(0);
-
         }
+
         [TestMethod]
         public void VerifySample()
         {
-            Mock<ISampleInterface> moq = new Mock<ISampleInterface>();
+            var moq = new Mock<ISampleInterface>();
             moq.Setup(x => x.SampleMethod(It.IsAny<string>())).Returns(0);
 
             moq.Object.SampleMethod("");

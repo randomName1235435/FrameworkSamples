@@ -21,27 +21,18 @@ namespace SwaggerSample
         {
             services.AddControllers();
 
-            services.AddSwaggerGen(x =>
-            {
-                x.SwaggerDoc("v1", new OpenApiInfo { Title = "My Api", Version = "v1" });
-            });
+            services.AddSwaggerGen(x => { x.SwaggerDoc("v1", new OpenApiInfo { Title = "My Api", Version = "v1" }); });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
+            if (env.IsDevelopment()) app.UseDeveloperExceptionPage();
 
-            SwaggerConfiguration swaggerConfiguration = new SwaggerConfiguration();
+            var swaggerConfiguration = new SwaggerConfiguration();
             Configuration.GetSection(nameof(SwaggerConfiguration)).Bind(swaggerConfiguration);
 
-            app.UseSwagger(o =>
-            {
-                o.RouteTemplate = swaggerConfiguration.JsonRoute;
-            });
+            app.UseSwagger(o => { o.RouteTemplate = swaggerConfiguration.JsonRoute; });
 
             app.UseSwaggerUI(o =>
             {
@@ -54,12 +45,10 @@ namespace SwaggerSample
 
             app.UseAuthorization();
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });
+            app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
         }
     }
+
     public class SwaggerConfiguration
     {
         public string JsonRoute { get; set; }

@@ -2,11 +2,11 @@
 
 namespace JsonUtf8
 {
-    class SampleClass
+    internal class SampleClass
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            string jsonText = "";
+            var jsonText = "";
             Utf8Json.JsonSerializer.ToJsonString(new SampleClass());
             Utf8Json.JsonSerializer.Deserialize<SampleClass>(jsonText);
         }

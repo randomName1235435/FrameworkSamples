@@ -3,9 +3,9 @@ using System;
 
 namespace StrongInjectSample
 {
-    class Sample
+    internal class Sample
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             using (var container = new SampleContainer())
             {

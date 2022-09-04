@@ -4,17 +4,21 @@ using System;
 namespace HarmonyProject
 {
     [HarmonyPatch]
-    class Sample
+    internal class Sample
     {
-        [HarmonyPatch(typeof(Sample), "SampleMethod")] 
-        static void SampleAfterMethod() { }
+        [HarmonyPatch(typeof(Sample), "SampleMethod")]
+        private static void SampleAfterMethod()
+        {
+        }
 
-        static void SampleInitMethod()
+        private static void SampleInitMethod()
         {
             var harmony = new Harmony("com.sample.patch");
             harmony.PatchAll();
         }
 
-        public void SampleMethod() { }
+        public void SampleMethod()
+        {
+        }
     }
 }

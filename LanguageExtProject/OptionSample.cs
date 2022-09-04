@@ -1,29 +1,30 @@
 ﻿using LanguageExt;
 
-namespace LanguageExtProject
+namespace LanguageExtProject;
+
+public class OptionSample
 {
-    public class OptionSample
+    public void main()
     {
-        public void main()
-        {
-            var result = GetSample();
-            result.Match(sample => Console.WriteLine("Is Customer"), () => Console.WriteLine("Is null"));
-            result.Match(HaveSample, NeedSample);
-        }
+        var result = GetSample();
+        result.Match(sample => Console.WriteLine("Is Customer"), () => Console.WriteLine("Is null"));
+        result.Match(HaveSample, NeedSample);
+    }
 
-        private void HaveSample(SampleClass sample)
-        {
-        }
+    private void HaveSample(SampleClass sample)
+    {
+    }
 
-        private void NeedSample()
-        {
-        }
+    private void NeedSample()
+    {
+    }
 
-        private Option<SampleClass> GetSample()
-        {
-            return null; //conversion to option
-        }
+    private Option<SampleClass> GetSample()
+    {
+        return null; //conversion to option
+    }
 
-        private class SampleClass { }
+    private class SampleClass
+    {
     }
 }

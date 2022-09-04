@@ -1,4 +1,4 @@
-using Microsoft.Extensions.DependencyInjection.Extensions;
+using AspDotNetBuiltInSample;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -31,14 +31,21 @@ app.MapControllers();
 
 app.Run();
 
-public interface ISampleService { }
-
-public class SampleServiceOne : ISampleService
+namespace AspDotNetBuiltInSample
 {
-    public SampleServiceOne(IEnumerable<ISampleService> servicecCollection)
+    public interface ISampleService
     {
-        //servicecCollection will contain SampleServiceOne & SampleServiceTwo
+    }
+
+    public class SampleServiceOne : ISampleService
+    {
+        public SampleServiceOne(IEnumerable<ISampleService> servicecCollection)
+        {
+            //servicecCollection will contain SampleServiceOne & SampleServiceTwo
+        }
+    }
+
+    public class SampleServiceTwo : ISampleService
+    {
     }
 }
-public class SampleServiceTwo : ISampleService
-{ }

@@ -10,13 +10,13 @@ namespace NSubstituteProject
         [TestMethod]
         public void SampleSubstitute()
         {
-            ISampleInterface sampleSubstitue = Substitute.For<ISampleInterface>();
+            var sampleSubstitue = Substitute.For<ISampleInterface>();
         }
 
         [TestMethod]
         public void SampleSubstituteMethod()
         {
-            ISampleInterface sampleSubstitue = Substitute.For<ISampleInterface>();
+            var sampleSubstitue = Substitute.For<ISampleInterface>();
             sampleSubstitue.SampleMethod(Arg.Any<string>()).Returns(0);
         }
     }

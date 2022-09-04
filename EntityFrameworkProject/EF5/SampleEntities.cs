@@ -19,7 +19,8 @@ namespace EntityFrameworkProject.EF5
 
         public IDbSet<SamplePoco> SampleTable { get; internal set; }
 
-        internal ObjectResult<SampleResultClass> SampleStoredProcedureWithParam(int? sampleIntParam, string sampleStringParam)
+        internal ObjectResult<SampleResultClass> SampleStoredProcedureWithParam(int? sampleIntParam,
+            string sampleStringParam)
         {
             throw new NotImplementedException();
         }

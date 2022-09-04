@@ -1,28 +1,26 @@
 ﻿using System.Threading;
-using System.Threading.Tasks;
 
-namespace CSharpProject
+namespace CSharpProject.Async.Task.Threading;
+
+internal class AsyncThreadSafeSample
 {
-    internal class AsyncThreadSafeSample
+    private readonly SemaphoreSlim semaphore = new(1); //lockinstance
+
+    private async System.Threading.Tasks.Task SampleMethodAsync()
     {
-        private SemaphoreSlim semaphore = new SemaphoreSlim(1); //lockinstance
-
-        private async Task SampleMethodAsync()
+        await semaphore.WaitAsync();
+        try
         {
-            await semaphore.WaitAsync();
-            try
-            {
-                await OtherSampleMethodeAsync();
-            }
-            finally
-            {
-                semaphore.Release();
-            }
+            await OtherSampleMethodeAsync();
         }
-
-        private async Task OtherSampleMethodeAsync()
+        finally
         {
-            await Task.Run(() => Thread.Sleep(1000));
+            semaphore.Release();
         }
+    }
+
+    private async System.Threading.Tasks.Task OtherSampleMethodeAsync()
+    {
+        await System.Threading.Tasks.Task.Run(() => Thread.Sleep(1000));
     }
 }

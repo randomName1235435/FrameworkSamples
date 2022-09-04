@@ -1,14 +1,13 @@
-﻿namespace CSharpProject
-{
-    class NestedMethodSample
-    {
-        public void SampleMethod()
-        {
-            SampleNestedMethod(0);
+﻿namespace CSharpProject.LanguageFeatures;
 
-            void SampleNestedMethod(int sampelParamether)
-            {
-            }
+internal class NestedMethodSample
+{
+    public void SampleMethod()
+    {
+        SampleNestedMethod(0);
+
+        void SampleNestedMethod(int sampelParamether)
+        {
         }
     }
 }

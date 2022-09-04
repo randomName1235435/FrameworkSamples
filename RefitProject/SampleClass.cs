@@ -16,8 +16,11 @@ namespace RefitProject
         [Get("/sample/{id}/sample")]
         Task<List<SampleResultClass>> Sample([AliasAs("id")] int sampleId);
     }
-    public class SampleClass {
-        public async Task SampleMethod() {
+
+    public class SampleClass
+    {
+        public async Task SampleMethod()
+        {
             var sampleApiService = RestService.For<ISampleInterfaceService>("https://sampleAdress");
             var result = await sampleApiService.GetSample("sample");
         }

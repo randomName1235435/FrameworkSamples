@@ -11,6 +11,7 @@ namespace MSTest
         {
             Assert.IsTrue(true);
         }
+
         [TestMethod]
         [ExpectedException(typeof(Exception))]
         public void ExpectedException()

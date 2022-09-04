@@ -6,7 +6,8 @@ namespace DotNetCoreSample
 {
     internal class AssemblyLoadContextSample : AssemblyLoadContext
     {
-        private void Sample() {
+        private void Sample()
+        {
             //replacement for appDomains
             var context = new AssemblyLoadContextSample();
             var jsonInContext = context.LoadFromAssemblyName(new System.Reflection.AssemblyName("Newtonsoft.Json"));

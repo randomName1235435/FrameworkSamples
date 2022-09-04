@@ -1,6 +1,5 @@
-﻿namespace JabSample
+﻿namespace JabSample;
+
+internal interface ISampleService
 {
-    internal interface ISampleService
-    {
-    }
 }

@@ -11,13 +11,9 @@
             Configuration.LazyLoadingEnabled = false;
             Configuration.ProxyCreationEnabled = false;
 
-            this.Database.CommandTimeout = 600;
+            Database.CommandTimeout = 600;
         }
 
-        public DbConnection Connection
-        {
-            get { return Database.Connection; }
-        }
+        public DbConnection Connection => Database.Connection;
     }
 }
-

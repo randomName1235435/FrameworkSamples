@@ -31,23 +31,18 @@ namespace WebApiVersioning
             {
                 option.AssumeDefaultVersionWhenUnspecified = true;
                 option.DefaultApiVersion = ApiVersion.Default;
-                option.ApiVersionReader = ApiVersionReader.Combine( 
-                    new HeaderApiVersionReader ("X-version"), 
+                option.ApiVersionReader = ApiVersionReader.Combine(
+                    new HeaderApiVersionReader("X-version"),
                     new MediaTypeApiVersionReader("version")
-                    );
+                );
                 option.ReportApiVersions = true;
             });
-
-            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
+            if (env.IsDevelopment()) app.UseDeveloperExceptionPage();
 
             app.UseHttpsRedirection();
 
@@ -55,11 +50,7 @@ namespace WebApiVersioning
 
             app.UseAuthorization();
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });
+            app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
         }
     }
 }
-
