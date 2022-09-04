@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 
 namespace WpfSample
@@ -11,7 +7,7 @@ namespace WpfSample
     {
         public void ChangeStyle(string ressourceDictionaryName)
         {
-            string path = "samplePath";
+            var path = "samplePath";
 
             //*notes: only works with complete independent ressource dictionaries, so use resmerger or something and dynamicResource in views/controls
 

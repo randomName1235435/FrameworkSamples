@@ -1,8 +1,6 @@
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Carter;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
 
 namespace CarterMinimalApiSample
 {
@@ -12,10 +10,7 @@ namespace CarterMinimalApiSample
         {
             var webHost = new WebHostBuilder()
                 .UseKestrel()
-                .ConfigureServices(services =>
-                {
-                    services.AddCarter();
-                }).Configure(app =>
+                .ConfigureServices(services => { services.AddCarter(); }).Configure(app =>
                 {
                     app.UseRouting();
                     app.UseEndpoints(builder => builder.MapCarter());
