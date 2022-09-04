@@ -17,10 +17,10 @@ GRPC server with ASP.NET
 ## Ioc-/DI-Container
 
 ### Jab
-Compile time service resolving and registration with source generator by compile time 
+Compile time service resolving and registration with source generator 
 
 ### Strong inject
-Compile time service resolving and registration with source generator by compile time
+Compile time service resolving and registration with source generator
 
 ### SimpleIocContainer
 Simple ioc container with assembly scanning, so no need for registrations
