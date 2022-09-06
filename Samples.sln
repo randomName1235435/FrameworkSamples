@@ -153,6 +153,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoslynProject", "RoslynProj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LightInjectSample", "LightInjectSample\LightInjectSample.csproj", "{9AB4A6E8-3901-4947-9E3D-1C137CF912F4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IntegrationTests", "IntegrationTests", "{15E65FFF-CAA9-4201-8132-5D0068C70BB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RespawnSample", "RespawnSample\RespawnSample.csproj", "{9665401E-19A7-402B-83C4-381AD81199BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -375,6 +379,10 @@ Global
 		{9AB4A6E8-3901-4947-9E3D-1C137CF912F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9AB4A6E8-3901-4947-9E3D-1C137CF912F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9AB4A6E8-3901-4947-9E3D-1C137CF912F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9665401E-19A7-402B-83C4-381AD81199BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9665401E-19A7-402B-83C4-381AD81199BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9665401E-19A7-402B-83C4-381AD81199BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9665401E-19A7-402B-83C4-381AD81199BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -432,6 +440,7 @@ Global
 		{9F916497-5559-478A-97F7-F233E1EDC213} = {BF3EE28E-CC86-425B-A14F-0B034BFDBD8C}
 		{CC6CC3FA-402E-419A-8526-6B15DB6E9999} = {69377DBC-D1E3-4C23-9CAB-AE961A7460FB}
 		{9AB4A6E8-3901-4947-9E3D-1C137CF912F4} = {137CB97E-EB9F-4B49-BD45-423923303A05}
+		{9665401E-19A7-402B-83C4-381AD81199BF} = {15E65FFF-CAA9-4201-8132-5D0068C70BB6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B1C8637B-A32F-467E-A42D-7E145AE39FAC}
